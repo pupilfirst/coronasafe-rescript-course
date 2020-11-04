@@ -19,24 +19,26 @@ export default function Home() {
       <main className={"MAIN"}>
         <section className="">
           <div className="SK">
-            <h2 className="text-4xl text-black font-monogame text-center">
-              Fight Corona with Code!
+            <div className="flex justify-center">
+              <h2 className="text-4xl text-black font-monogame border-b-4 border-black mb-4 text-center">
+                Fight Corona with Code!
             </h2>
+            </div>
             <h3 className="text-xl text-gray-500 font-monogame text-center">
               Training & Internship Course
             </h3>
-            <img src="hero.png" className="bg-contain" />
+            <img src="hero.png" className="bg-contain mt-8" />
 
-            <div className="flex justify-between">
-              <p className="text-gray-500">
-                <span className="font-bold">Hello Programmers!</span>
+            <div className="flex justify-between items-center mt-8">
+              <p className="text-gray-700 w-1/2">
+                <span className="font-bold text-black">Hello Programmers! </span>
                 Join for a practical, in-depth course focused on typed
                 functional programming. After training, you’ll work on live
                 projects building software to help India’s corona-fighting
                 efforts.
               </p>
               <a
-                className="uppercase block px-10 py-4 bg-black text-white font-extrabold font-inter"
+                className="uppercase block px-10 py-4 bg-black text-white font-extrabold font-inter rounded-full"
                 href="/apply"
               >
                 Apply to course
@@ -45,6 +47,11 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="bg-blue-100 p-20 flex justify-center items-center">
+          <img className="block" src="logos/dell.png" />
+          <img className="block ml-32" src="logos/freshworks.png" />
+          <img className="block ml-32" src="logos/aicte.png" />
+        </section>
         <section className="LP">
           <h1>CoronaSafe Programming Course</h1>
 
