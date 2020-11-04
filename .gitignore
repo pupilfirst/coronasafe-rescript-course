@@ -32,3 +32,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# custom - keep tailwind generated CSS out of git. 
+# it is used only during dev for quick style lookup.
+styles.css
+

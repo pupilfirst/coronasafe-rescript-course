@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.SK {
+  @apply p-16 max-w-screen-xl mx-auto;
+}
+
+.LP {
+  @apply p-4 max-w-screen-xl mx-auto;
+}
+
+.LP h1 {
+  @apply text-4xl mb-8;
+}
+
+.LP h2 {
+  @apply text-2xl mt-8 mb-4;
+}
+
+.LP h3 {
+  @apply text-xl text-gray-700 mb-4;
+}
+
+.LP p {
+  @apply text-lg mb-4;
+}
