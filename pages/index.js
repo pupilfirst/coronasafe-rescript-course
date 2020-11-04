@@ -47,14 +47,28 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-blue-100 p-20 flex justify-center items-center">
+        <section className="logos-bg p-20 flex justify-center items-center">
           <img className="block" src="logos/dell.png" />
           <img className="block ml-32" src="logos/freshworks.png" />
           <img className="block ml-32" src="logos/aicte.png" />
         </section>
-        <section className="LP">
-          <h1>CoronaSafe Programming Course</h1>
 
+        <section className="highlights-bg p-32 font-inter font-bold text-3xl leading-snug">
+          <div className="w-2/3 mx-auto">
+            <span className="text-gray-700">
+              Worth 3 AICTE credits.&nbsp;
+            </span>
+            Internship opportunities with Freshworks, Truecaller, GoJek, Big-binary.&nbsp;
+            <span className="text-gray-700">
+              Practical lessons drawn from 15+ years of industry experience.&nbsp;
+            </span>
+            Build real world, modern web applications.&nbsp;
+            <span className="text-gray-700">
+              1:1 mentorships & 1:many friendships.&nbsp;
+            </span>
+          </div>
+        </section>
+        <section className="LP">
           <h2>Features of this course</h2>
 
           <h3>

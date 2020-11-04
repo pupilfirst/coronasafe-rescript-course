@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-inter;
+}
+
 .SK {
   @apply p-16 max-w-screen-xl mx-auto;
 }
 
 .LP {
-  @apply p-4 max-w-screen-xl mx-auto;
-}
-
-.LP h1 {
-  @apply text-4xl mb-8;
+  @apply p-4 max-w-screen-md mx-auto;
 }
 
 .LP h2 {
-  @apply text-2xl mt-8 mb-4;
+  @apply text-3xl mt-8 mb-4;
 }
 
 .LP h3 {
-  @apply text-xl text-gray-700 mb-4;
+  @apply text-2xl text-gray-700 font-medium mt-6 mb-2;
 }
 
 .LP p {
   @apply text-lg mb-4;
+}
+
+.logos-bg {
+  background-color: rgba(219, 233, 236, 20%);
+}
+
+.highlights-bg {
+  background-color: #dbe9ec;
 }
