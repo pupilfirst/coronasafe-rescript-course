@@ -110,9 +110,7 @@ export default function Home() {
           <div className="w-2/3 mx-auto leading-normal">
             <h2>How is this course different?</h2>
 
-            <h3>
-              Write open-source code for Corona disaster management
-            </h3>
+            <h3>Write open-source code for Corona disaster management</h3>
 
             <p>
               This course is part of the CoronaSafe initiative that will let you
@@ -149,10 +147,7 @@ export default function Home() {
               abstraction boundaries, data modelling, layering, and so on.{" "}
             </p>
 
-            <h3>
-              Ask Me Anything (AMA) with devs, designers, and
-              founders
-            </h3>
+            <h3>Ask Me Anything (AMA) with devs, designers, and founders</h3>
 
             <p>
               You will hear experience reports from people in the industry.
@@ -195,9 +190,7 @@ export default function Home() {
               even long after.
             </p>
 
-            <h3>
-              Build live, real-world software with Ruby on Rails
-            </h3>
+            <h3>Build live, real-world software with Ruby on Rails</h3>
 
             <p>
               Ruby on Rails pioneered the modern web framework revolution. It is
@@ -208,9 +201,7 @@ export default function Home() {
               companies.{" "}
             </p>
 
-            <h3>
-              Create advanced front-ends with React and ReScript/OCaml
-            </h3>
+            <h3>Create advanced front-ends with React and ReScript/OCaml</h3>
 
             <p>
               You’ll learn to program in the Typed Functional paradigm in
@@ -220,58 +211,59 @@ export default function Home() {
               to user input forms, games, and single-page applications.
             </p>
 
-            <h2>This course has a theme: data-first programming</h2>
+            <h2>Course theme: data-first programming</h2>
 
+            <p>
+              This course is built on the theme that programming is about
+              computation. We can express most programming problems as a
+              transformation of data from one value to another. Compilers are a
+              canonical example, but it is true even for software that doesn't
+              look like that from the surface. Consider a computer game: it can
+              be expressed as two separate things: one is the data about its
+              entities: their position, stats, direction, next move, and so on.
+              Then there is a render function that draws the game world to the
+              screen at 60 frames per second.
+            </p>
             <p>
               This course will teach you to design programs well by thinking
-              about data first. It is an old technique, but unfortunately it
-              takes most of us many years of programming before we truly
-              appreciate it.{" "}
+              about data first. It is an old and powerful technique, and most
+              programmers intuitively learn it after many years of programming.
+              The intention of this course is to get you started in that path
+              sooner, without having you repeat the same mistakes we made and
+              re-learn the same lessons programmers before you have painfully
+              learnt.
             </p>
 
             <p>
-              But why should you retrace that same circuitous path? Why repeat
-              the same mistakes and spend years re-learning the same lessons
-              that programmers before you have painfully learnt?
+              The gist of this idea is this: “if you get the data structures and
+              their invariants right, most of the code will just kind of write
+              itself”. Linus Torvalds once claimed that the difference between a
+              bad programmer and a good one is whether they consider their code
+              or their data structures more important.
             </p>
 
             <p>
-              And what is that lesson? It is this: “if you get the data
-              structures and their invariants right, most of the code will just
-              kind of write itself”. Linus Torvalds once claimed that the
-              difference between a bad programmer and a good one is whether they
-              consider their code or their data structures more important.
+              The data structures we'll be considering in this course are not
+              the low-level algorithmic primitives like stacks, queues, and
+              trees. Instead, we’re talking about data models used for
+              application programming. The data model for things like a
+              multi-player platformer game, or small but rich front-end
+              components like an image gallery with infinite scroll and graceful
+              error handling. Or even larger systems like a Twitter-like
+              platform.
             </p>
 
             <p>
-              And when we say data structure, we don’t mean low-level primitives
-              like stacks, queues, and trees. Instead, we’re talking about data
-              models used for application programming. If you were to create a
-              multi-player platformer game, how would you model the game
-              entities? Or if you wanted to create an image gallery with search,
-              infinite scrolling and robust error handling and retry, how would
-              you model it? If you wanted to build a Twitter-like platform, how
-              would you design its data model?{" "}
+              We will encounter many modelling opportunities in this course, and
+              the approach will be to get you spend time upfront designing how
+              your data is organized. We will model our computations as a series
+              of transformations of data from one type to another. And the
+              marrow of these exercises are when we discover and synthesize
+              non-obvious intermediate data structures, allowing us to elegantly
+              distil the gist of the problem into our code.
             </p>
 
-            <p>
-              The key here is that irrespective of what software you want to
-              build, you should spend time upfront designing how your data is
-              organized. You should model your operations as a series of
-              transformations of data from one type to another. And sometimes
-              you should synthesize your own intermediate data structures to
-              suit the task at hand.
-            </p>
-
-            <p>
-              Data-oriented programming is a cognitive skill that will increase
-              your range as makers - you will be able to build software that you
-              previously couldn’t even imagine attempting. Where you would have
-              to rewrite your entire codebase many times before converging to a
-              good design, you would be able to come out with a better
-              implementation in your very first attempt.
-            </p>
-
+            <h2>Typed Functional Programming with ReScript/OCaml</h2>
             <p>
               We chose the typed functional programming paradigm to teach this
               because it has all the right features to support this mode of
