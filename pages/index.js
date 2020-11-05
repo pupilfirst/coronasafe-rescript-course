@@ -2,12 +2,14 @@ import Head from "next/head";
 
 function ApplyToCourse() {
   return (
-    <a
-      className="uppercase block px-10 py-4 bg-black text-white font-extrabold font-inter rounded-full"
-      href="/apply"
-    >
-      Apply to course
+    <div className="flex">
+      <a
+        className="uppercase block px-10 py-4 bg-black text-white font-extrabold font-inter rounded-full"
+        href="/apply"
+      >
+        Apply to course
     </a>
+    </div>
   );
 }
 
@@ -31,7 +33,7 @@ export default function Home() {
         <section className="">
           <div className="SK">
             <div className="flex justify-center">
-              <h2 className="text-4xl text-black font-monogame border-b-4 border-black mb-4 text-center">
+              <h2 className="text-3xl md:text-4xl text-black font-monogame border-b-4 border-black mb-4 text-center">
                 Fight Corona with Code!
               </h2>
             </div>
@@ -40,8 +42,8 @@ export default function Home() {
             </h3>
             <img src="hero.png" className="bg-contain mt-8" />
 
-            <div className="flex justify-between items-center mt-8">
-              <p className="text-gray-700 w-1/2">
+            <div className="md:flex justify-between items-center mt-8">
+              <p className="text-gray-700 mb-8 md:w-1/2">
                 <span className="font-bold text-black">
                   Hello Programmers!{" "}
                 </span>
@@ -55,13 +57,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="logos-bg p-20 flex justify-center items-center">
-          <img className="block" src="logos/dell.png" />
-          <img className="block ml-32" src="logos/freshworks.png" />
-          <img className="block ml-32" src="logos/aicte.png" />
+        <section className="logos-bg p-8 md:p-20 md:flex justify-center items-center">
+          <img className="block mb-8" src="logos/dell.png" />
+          <img className="block mb-8 md:ml-32" src="logos/freshworks.png" />
+          <img className="block mb-8 md:ml-32" src="logos/aicte.png" />
         </section>
 
-        <section className="highlights-bg p-32 font-inter font-bold text-3xl leading-snug">
+        <section className="highlights-bg p-8 md:p-16 lg:p-32 font-inter font-bold text-3xl leading-snug">
           <div className="C-pwidth mx-auto">
             <span className="text-gray-700">
               Build real-world, modern web apps.&nbsp;
@@ -79,7 +81,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="p-32">
+        <section className="p-8 md:p-16 lg:p-32">
           <div className="C-pwidth mx-auto leading-normal">
             <h2 className="font-extrabold text-3xl mb-8">
               Everything you need to know
@@ -107,17 +109,15 @@ export default function Home() {
               ReScript / OCaml. Ruby on Rails. React. PostgreSQL. Typed FP.
               Relax! No prior knowledge of these is assumed.
             </p>
-            <p className="mb-2">
+            <p className="mb-12">
               <span className="font-extrabold">Certificate? </span>
               Yes.
             </p>
-            <div className="flex mt-12">
-              <ApplyToCourse />
-            </div>
+            <ApplyToCourse />
           </div>
         </section>
 
-        <section className="LP px-32">
+        <section className="LP px-4 md:px-16 lg:px-32">
           <div className="C-pwidth mx-auto leading-normal">
             <div className="mb-16">
               <h2>Write open-source code for Corona disaster management</h2>

@@ -10,7 +10,18 @@ body {
 }
 
 .SK {
-  @apply p-16 max-w-screen-xl mx-auto;
+  @apply p-8 max-w-screen-sm mx-auto;
+}
+
+@screen md {
+  .SK {
+    @apply p-8 max-w-screen-md mx-auto;
+  }
+}
+@screen lg {
+  .SK {
+    @apply p-16 max-w-screen-xl mx-auto;
+  }
 }
 
 .LP {
