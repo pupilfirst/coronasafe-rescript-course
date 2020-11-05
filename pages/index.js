@@ -1,5 +1,16 @@
 import Head from "next/head";
 
+function ApplyToCourse() {
+  return (
+    <a
+      className="uppercase block px-10 py-4 bg-black text-white font-extrabold font-inter rounded-full"
+      href="/apply"
+    >
+      Apply to course
+    </a>
+  );
+}
+
 export default function Home() {
   return (
     <div className={""}>
@@ -39,12 +50,7 @@ export default function Home() {
                 projects building software to help India’s corona-fighting
                 efforts.
               </p>
-              <a
-                className="uppercase block px-10 py-4 bg-black text-white font-extrabold font-inter rounded-full"
-                href="/apply"
-              >
-                Apply to course
-              </a>
+              <ApplyToCourse />
             </div>
           </div>
         </section>
@@ -57,14 +63,13 @@ export default function Home() {
 
         <section className="highlights-bg p-32 font-inter font-bold text-3xl leading-snug">
           <div className="w-2/3 mx-auto">
-            <span className="text-gray-700">Worth 3 AICTE credits.&nbsp;</span>
-            Internship opportunities with Freshworks, Truecaller, GoJek,
-            Big-binary.&nbsp;
+            <span className="text-gray-700">Build real-world, modern web apps.&nbsp;</span>
+            Internship opportunity with CoronaSafe building open-source software.&nbsp;
             <span className="text-gray-700">
               Practical lessons drawn from 15+ years of industry
               experience.&nbsp;
             </span>
-            Build real world, modern web applications.&nbsp;
+            Learned Typed Functional Programming with ReScript/OCaml.&nbsp;
             <span className="text-gray-700">
               1:1 mentorships & 1:many friendships.&nbsp;
             </span>
@@ -103,6 +108,9 @@ export default function Home() {
               <span className="font-extrabold">Certificate? </span>
               Yes.
             </p>
+            <div className="flex mt-12">
+              <ApplyToCourse />
+            </div>
           </div>
         </section>
 
