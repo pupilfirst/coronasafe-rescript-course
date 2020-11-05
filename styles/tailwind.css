@@ -11,11 +11,10 @@ body {
 }
 
 .LP {
-  @apply p-4 max-w-screen-md mx-auto;
 }
 
 .LP h2 {
-  @apply text-3xl mt-8 mb-4;
+  @apply text-3xl font-bold mt-12 pt-8 mb-4;
 }
 
 .LP h3 {
@@ -23,7 +22,7 @@ body {
 }
 
 .LP p {
-  @apply text-lg mb-4;
+  @apply mb-4;
 }
 
 .logos-bg {
