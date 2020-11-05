@@ -4,6 +4,9 @@
 
 body {
   @apply font-inter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .SK {
@@ -31,4 +34,8 @@ body {
 
 .highlights-bg {
   background-color: #dbe9ec;
+}
+
+.C-pwidth {
+  max-width: 720px;
 }
