@@ -9,44 +9,68 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.SK {
-  @apply p-8 max-w-screen-sm mx-auto;
+.WelcomeText {
+  color: rgba(14, 16, 27, 0.6);
+}
+.Testimonials {
+  background-color: #C9CEE4;
+}
+
+.HeroWithTestimonials {
+  background-color: #DBDEEC;
+}
+
+.EverythingToKnow {
+  background-color: rgba(255, 184, 0, 0.6);
+}
+
+.Versus {
+  margin: 0 130px;
+  color: rgba(14, 16, 27, 0.4);
+}
+
+.Hero {
+  @apply max-w-screen-sm mx-auto;
+  padding: 32px 60px;
 }
 
 @screen md {
-  .SK {
+  .Hero {
     @apply p-8 max-w-screen-md mx-auto;
   }
 }
 @screen lg {
-  .SK {
+  .Hero {
     @apply p-16 max-w-screen-xl mx-auto;
   }
 }
 
-.LP {
+.Longform {
 }
 
-.LP h2 {
+.Longform h2 {
   @apply text-3xl font-bold mt-12 pt-8 mb-4;
 }
 
-.LP h3 {
+.Longform h3 {
   @apply text-2xl text-gray-700 font-medium mt-6 mb-2;
 }
 
-.LP p {
+.Longform p {
   @apply mb-4;
 }
 
-.logos-bg {
-  background-color: rgba(219, 233, 236, 20%);
+.padded {
+  @apply py-8;
 }
 
-.highlights-bg {
-  background-color: #dbe9ec;
+@screen md {
+  .padded {
+    @apply py-16
+  }
 }
-
-.C-pwidth {
-  max-width: 720px;
+@screen lg {
+  .padded {
+    @apply py-32
+  }
 }
