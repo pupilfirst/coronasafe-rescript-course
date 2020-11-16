@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "tw": "tailwindcss build styles/tailwind.css -o styles.css"
+    "tw": "tailwindcss build styles/tailwind.css -o styles.css",
+    "export": "next build && next export -o ./build"
   },
   "dependencies": {
     "next": "10.0.1",
