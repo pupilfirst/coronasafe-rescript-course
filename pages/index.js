@@ -29,38 +29,40 @@ export default function Home() {
         />
       </Head>
 
-      <main className={"MAIN text-xl"}>
+      <main className={"text-xl pb-24"}>
         <section className="HeroWithPartnerLogos">
-          <div className="Hero">
-            <div className="flex items-baseline justify-center">
-              <div>
-                <img src="hero/corona.png" alt="Corona Virus" className={"bg-contain"}/>
+          <div className="ContentSection">
+            <div className="Hero">
+              <div className="md:flex flex-shrink-0 items-baseline justify-center">
+                <div className="flex-shrink-0">
+                  <img src="hero/corona.png" alt="Corona Virus" className={"bg-contain"}/>
+                  <p
+                    className="text-3xl md:text-4xl text-black font-monogame border-black mb-4">Corona
+                  </p>
+                </div>
+
                 <p
-                  className="text-3xl md:text-4xl text-black font-monogame border-black mb-4">Corona
+                  className="Versus text-3xl md:text-4xl font-monogame border-black mb-4">v.
                 </p>
+
+                <div className="flex-shrink-0 ">
+                  <img src="hero/code.png" alt="Code" className={"bg-contain"}/>
+                  <p
+                    className="text-3xl md:text-4xl text-black font-monogame border-black mb-4">Code
+                  </p>
+                </div>
               </div>
 
-              <p
-                className="Versus text-3xl md:text-4xl font-monogame border-black mb-4">v.
-              </p>
-
-              <div>
-                <img src="hero/code.png" alt="Code" className={"bg-contain"}/>
-                <p
-                  className="text-3xl md:text-4xl text-black font-monogame border-black mb-4">Code
-                </p>
-              </div>
-            </div>
-
-            <div className="md:flex justify-between items-center mt-8">
-              <p className="WelcomeText font-medium mb-8 md:w-1/2">
+              <div className="md:flex justify-between items-center mt-8">
+                <p className="WelcomeText font-medium mb-8 md:w-1/2">
                 <span className="font-bold text-black">
                   Welcome to the CoronaSafe Engineering Fellowship!{" "}
                 </span>
-                CoronaSafe Engineering Fellowship is a national programme to identify the top 30 students in
-                software engineering for an industry-led training to become full-stack developers.
-              </p>
-              <ApplyToCourse/>
+                  CoronaSafe Engineering Fellowship is a national programme to identify the top 30 students in
+                  software engineering for an industry-led training to become full-stack developers.
+                </p>
+                <ApplyToCourse/>
+              </div>
             </div>
           </div>
 
@@ -73,29 +75,28 @@ export default function Home() {
         </section>
 
 
-        <section className="padded font-inter font-bold text-3xl leading-snug">
-          <div className="max-w-screen-xl mx-auto">
-            <div className="w-2/3 mx-auto">
-            <span className="text-gray-700">
-              Build real-world, modern web apps.&nbsp;
-            </span>
-              Create open-source
-              software.&nbsp;
+        <section className="ContentSection">
+          <div className="max-w-3xl mx-auto text-2xl md:text-3xl font-inter font-bold leading-snug">
+            <p className="">
               <span className="text-gray-700">
-              Practical lessons drawn from 15+ years of industry
-              experience.&nbsp;
-            </span>
+                Build real-world, modern web apps.&nbsp;
+              </span>
+              Create open-source software.&nbsp;
+              <span className="text-gray-700">
+                Practical lessons drawn from 15+ years of industry
+                experience.&nbsp;
+              </span>
               Learn Typed Functional Programming with ReScript/OCaml.&nbsp;
               <span className="text-gray-700">
-              1:1 mentorships & 1:many friendships.&nbsp;
-            </span>
-            </div>
+                1:1 mentorships & 1:many friendships.&nbsp;
+              </span>
+            </p>
           </div>
         </section>
 
-        <section className="EverythingToKnow padded">
-          <div className="max-w-screen-xl mx-auto">
-            <div className="w-2/3 mx-auto leading-normal">
+        <section className="EverythingToKnow">
+          <div className="ContentSection">
+            <div className="max-w-2xl mx-auto leading-normal">
               <h2 className="font-extrabold text-3xl mb-8">
                 Everything you need to know
               </h2>
@@ -141,13 +142,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="SupportedBy mb-16 padded text-center">
-          <div className="max-w-screen-xl mx-auto">
-            <h2 className="font-black SupportedBy-title text-center mb-16">
+        <section className="SupportedBy mb-16 text-center">
+          <div className="ContentSection">
+            <h2 className="font-black text-2xl md:text-3xl text-center mb-16">
               An initiative supported by
             </h2>
-            <div className="grid grid-cols-3 justify-between w-4/5 mx-auto">
-              <div className="text-center">
+            <div className="grid md:grid-cols-3 justify-center md:justify-between w-4/5 mx-auto">
+              <div className="text-center mb-12">
                 <img src="people/mekin.png" alt="Mekin" className="mb-8 inline"/>
                 <p className={"font-medium text-xl mb-4"}>Mekin Maheshwari</p>
                 <p className={"font-medium SupportedBy-desc"}>
@@ -155,7 +156,7 @@ export default function Home() {
                   ex-CTO, Flipkart
                 </p>
               </div>
-              <div className="text-center">
+              <div className="text-center mb-12">
                 <img src="people/girish.png" alt="Girish" className="mb-8 inline"/>
                 <p className={"font-medium text-xl mb-4"}>Girish Mathrubhootham</p>
                 <p className={"font-medium SupportedBy-desc"}>
@@ -163,8 +164,7 @@ export default function Home() {
                   Freshworks Inc
                 </p>
               </div>
-
-              <div className="text-center">
+              <div className="text-center mb-12">
                 <img src="people/sanjay.png" alt="Sanjay" className="mb-8 inline"/>
                 <p className={"font-medium text-xl mb-4"}>Sanjay Vijayakumar</p>
                 <p className={"font-medium SupportedBy-desc"}>
@@ -176,11 +176,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="Testimonials padded max-w-screen-xl mx-auto">
-          <div className="px-8">
-            <div className="flex justify-between font-inter font-medium italic">
+        <section className="Testimonials">
+          <div className="ContentSection">
+            <div className="md:flex justify-between font-inter font-medium italic">
               <div>
-                <blockquote>
+                <blockquote className={"mr-4 mb-4"}>
                   This workshop was very intriguing. The instructors went to the extra mile by providing us with so much
                   references to books, blogs and talks we could refer to. The most impressive thing was the effort they
                   took to print out research papers and hand out a spiral bound copy to every one!!
@@ -190,21 +190,21 @@ export default function Home() {
                   and how keen they are towards building a community. This workshop was very inspiring and a significant
                   memory to hold on to.
                 </blockquote>
-                <blockquote className={"mr-4 mt-4"}>
+                <blockquote className={"mr-4 mb-4"}>
                   The final product that we were asked to build was amazing. There were plenty of things that
                   we were able to learn ourselves towards that journey. I am glad that we were able to create such a
-                  good product."
+                  good product.
                 </blockquote>
               </div>
               <div>
-                <blockquote className={"mr-4"}>
+                <blockquote className={"mr-4 mb-4"}>
                   The experience which I had while doing the course was different, interesting, enjoyable and a bit
                   difficult at the same time from the rest of the courses which I have done so far. The PupilFirst
                   platform helped a lot in better understanding of the course and also the faculties, teaching
                   assistants and course co-ordinators were reachable at any time and responsive even in this pandemic
                   situation.
                 </blockquote>
-                <blockquote className={"mr-4 mt-4"}>
+                <blockquote className={"mr-4 mb-4"}>
                   Loved everything about this course.
                   It was great to receive feedback from industry professionals. We learned a lot outside the curriculum
                   while doing the project - Github, CSS, JS, and the assignments were exceptionally good in testing our
@@ -215,15 +215,21 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="Longform max-w-screen-xl mx-auto">
-          <div className="w-1/2 mx-auto leading-normal">
+        <section className="Longform ContentSection">
+          <div className="max-w-2xl mx-auto">
+            <div className="mb-16">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/RYAu0CmB-TA" frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen></iframe>
+            </div>
+
             <div className="mb-16">
               <h2>Free</h2>
               <p>
-                This course is created by a team of over a dozen people with
+                This program is created by a team of over a dozen people from across multiple companies, with
                 funding from the Michael &amp; Dell Foundation, the ACT
                 foundation, and support from FreshWorks. This funding enables us
-                to offer this course to you for free.{" "}
+                to offer the course to you for free.{" "}
               </p>
             </div>
 

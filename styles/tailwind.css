@@ -9,17 +9,40 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.ContentSection {
+  @apply max-w-screen-sm mx-auto;
+  @apply py-8;
+  @apply px-8;
+}
+
+@screen sm {
+  .ContentSection {
+    @apply max-w-screen-md;
+    @apply py-16;
+    @apply px-0;
+  }
+}
+
+@screen md {
+  .ContentSection {
+    @apply max-w-screen-lg mx-auto;
+    @apply py-32;
+    @apply w-2/3;
+  }
+}
+
 .WelcomeText {
   color: rgba(14, 16, 27, 0.6);
+}
+
+.HeroWithPartnerLogos {
+  background-color: #DBDEEC;
 }
 
 .PartnerLogos {
   background-color: #C9CEE4;
 }
 
-.HeroWithPartnerLogos {
-  background-color: #DBDEEC;
-}
 
 .EverythingToKnow {
   background-color: rgba(255, 184, 0, 0.6);
@@ -30,23 +53,9 @@ body {
   color: rgba(14, 16, 27, 0.4);
 }
 
-.Hero {
-  @apply max-w-screen-sm mx-auto;
-  padding: 32px 60px;
-}
-
-@screen md {
-  .Hero {
-    @apply p-8 max-w-screen-md mx-auto;
-  }
-}
-@screen lg {
-  .Hero {
-    @apply p-16 max-w-screen-xl mx-auto;
-  }
-}
-
 .Longform {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .Longform h2 {
@@ -86,26 +95,7 @@ body {
   background-color: #F1F1F1;
 }
 
-.SupportedBy-title {
-  font-size: 30px;
-}
-
 .SupportedBy-desc {
   color: rgba(0, 0, 0, 0.4);
   font-size: 18px;
-}
-
-.padded {
-  @apply py-8;
-}
-
-@screen md {
-  .padded {
-    @apply py-16
-  }
-}
-@screen lg {
-  .padded {
-    @apply py-32
-  }
 }
