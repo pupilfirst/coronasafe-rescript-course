@@ -141,16 +141,77 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="SupportedBy mb-16 padded text-center">
+          <div className="max-w-screen-xl mx-auto">
+            <h2 className="font-black SupportedBy-title text-center mb-16">
+              An initiative supported by
+            </h2>
+            <div className="grid grid-cols-3 justify-between w-4/5 mx-auto">
+              <div className="text-center">
+                <img src="people/mekin.png" alt="Mekin" className="mb-8 inline"/>
+                <p className={"font-medium text-xl mb-4"}>Mekin Maheshwari</p>
+                <p className={"font-medium SupportedBy-desc"}>
+                  Founder, Udhyam.org <br/>
+                  ex-CTO, Flipkart
+                </p>
+              </div>
+              <div className="text-center">
+                <img src="people/girish.png" alt="Girish" className="mb-8 inline"/>
+                <p className={"font-medium text-xl mb-4"}>Girish Mathrubhootham</p>
+                <p className={"font-medium SupportedBy-desc"}>
+                  Founder & CEO, <br/>
+                  Freshworks Inc
+                </p>
+              </div>
+
+              <div className="text-center">
+                <img src="people/sanjay.png" alt="Sanjay" className="mb-8 inline"/>
+                <p className={"font-medium text-xl mb-4"}>Sanjay Vijayakumar</p>
+                <p className={"font-medium SupportedBy-desc"}>
+                  Founder & CEO,<br/>
+                  PupilFirst.org
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="Testimonials padded max-w-screen-xl mx-auto">
-          <div className="flex justify-between font-inter font-medium italic">
-            <blockquote className={"mr-8"}>
-              The final product that we were asked to build was amazing. The things we got to learn ourselves in the
-              journey towards the final product were plenty. I am glad that we were able to make a good product."
-            </blockquote>
-            <blockquote>
-              The final product that we were asked to build was amazing. The things we got to learn ourselves in the
-              journey towards the final product were plenty. I am glad that we were able to make a good product."
-            </blockquote>
+          <div className="px-8">
+            <div className="flex justify-between font-inter font-medium italic">
+              <div>
+                <blockquote>
+                  This workshop was very intriguing. The instructors went to the extra mile by providing us with so much
+                  references to books, blogs and talks we could refer to. The most impressive thing was the effort they
+                  took to print out research papers and hand out a spiral bound copy to every one!!
+
+                  I mean the kind of commitment they have towards this just swayed us and shows their love for
+                  programming
+                  and how keen they are towards building a community. This workshop was very inspiring and a significant
+                  memory to hold on to.
+                </blockquote>
+                <blockquote className={"mr-4 mt-4"}>
+                  The final product that we were asked to build was amazing. There were plenty of things that
+                  we were able to learn ourselves towards that journey. I am glad that we were able to create such a
+                  good product."
+                </blockquote>
+              </div>
+              <div>
+                <blockquote className={"mr-4"}>
+                  The experience which I had while doing the course was different, interesting, enjoyable and a bit
+                  difficult at the same time from the rest of the courses which I have done so far. The PupilFirst
+                  platform helped a lot in better understanding of the course and also the faculties, teaching
+                  assistants and course co-ordinators were reachable at any time and responsive even in this pandemic
+                  situation.
+                </blockquote>
+                <blockquote className={"mr-4 mt-4"}>
+                  Loved everything about this course.
+                  It was great to receive feedback from industry professionals. We learned a lot outside the curriculum
+                  while doing the project - Github, CSS, JS, and the assignments were exceptionally good in testing our
+                  knowledge about that week's syllabus.
+                </blockquote>
+              </div>
+            </div>
           </div>
         </section>
 
