@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
 
       <main className={"MAIN text-xl"}>
-        <section className="HeroWithTestimonials">
+        <section className="HeroWithPartnerLogos">
           <div className="Hero">
             <div className="flex items-baseline justify-center">
               <div>
@@ -64,7 +64,7 @@ export default function Home() {
             </div>
           </div>
 
-          <section className="Testimonials p-8 md:p-20 md:flex justify-center items-center">
+          <section className="PartnerLogos p-8 md:p-20 md:flex justify-center items-center">
             <img className="block mb-8" src="logos/dell.png"/>
             <img className="block mb-8 md:ml-32" src="logos/freshworks.png"/>
             <img className="block mb-8 md:ml-32" src="logos/aicte.png"/>
@@ -138,6 +138,19 @@ export default function Home() {
               </p>
               <ApplyToCourse/>
             </div>
+          </div>
+        </section>
+
+        <section className="Testimonials padded max-w-screen-xl mx-auto">
+          <div className="flex justify-between font-inter font-medium italic">
+            <blockquote className={"mr-8"}>
+              The final product that we were asked to build was amazing. The things we got to learn ourselves in the
+              journey towards the final product were plenty. I am glad that we were able to make a good product."
+            </blockquote>
+            <blockquote>
+              The final product that we were asked to build was amazing. The things we got to learn ourselves in the
+              journey towards the final product were plenty. I am glad that we were able to make a good product."
+            </blockquote>
           </div>
         </section>
 

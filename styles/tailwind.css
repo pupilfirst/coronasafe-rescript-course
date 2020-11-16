@@ -12,11 +12,12 @@ body {
 .WelcomeText {
   color: rgba(14, 16, 27, 0.6);
 }
-.Testimonials {
+
+.PartnerLogos {
   background-color: #C9CEE4;
 }
 
-.HeroWithTestimonials {
+.HeroWithPartnerLogos {
   background-color: #DBDEEC;
 }
 
@@ -58,6 +59,29 @@ body {
 
 .Longform p {
   @apply mb-4;
+}
+
+.Testimonials {
+  color: #5C5F6D;
+  font-size: 18px;
+}
+
+.Testimonials blockquote {
+  position: relative;
+  padding-left: 20px;
+  max-width: 560px;
+}
+
+.Testimonials blockquote:before {
+  display: block;
+  padding-left: 10px;
+  content: open-quote;
+  font-family: "Proxima Nova", "Adobe Garamond Pro", "Lucida Grande", serif;
+  font-size: 70px;
+  position: absolute;
+  left: -20px;
+  top: -40px;
+  color: #7a7a7a;
 }
 
 .padded {
