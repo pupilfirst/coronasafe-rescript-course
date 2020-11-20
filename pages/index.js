@@ -107,8 +107,8 @@ export default function Home() {
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Who’s this for? </span>
-                Age 18+ student & junior programmers. You should have written
-                non-trivial code before; for your own or workplace projects.
+                Age 18+ students. You should have written
+                non-trivial code before; for your own or college projects.
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">When? </span>
