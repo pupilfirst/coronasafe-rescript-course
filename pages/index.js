@@ -28,7 +28,7 @@ function HeroCharacter({caption, imgSrc}) {
 function ImageWithDescription({name, caption, imgSrc}) {
   return (
     <div className="text-center text-base lg:text-lg xl:text-xl mb-12">
-      <img src={imgSrc} alt="Mekin" className="mb-8 inline w-32 xl:w-auto"/>
+      <img src={imgSrc} alt={caption} className="mb-8 inline w-32 xl:w-auto"/>
       <p className={"font-medium mb-2 lg:mb-4"}>{name}</p>
       <p className={"font-medium SupportedBy-desc"}>
         {caption}
@@ -39,14 +39,14 @@ function ImageWithDescription({name, caption, imgSrc}) {
 
 function StatsWithTitleAndDescription({title, description}) {
   return (
-      <div className="text-center">
-        <div className="font-semibold text-2xl">
-          {title}
-        </div>
-        <div className="text-sm">
-          {description}
-        </div>
+    <div className="text-center">
+      <div className="font-semibold text-2xl">
+        {title}
       </div>
+      <div className="text-sm">
+        {description}
+      </div>
+    </div>
   )
 }
 
@@ -80,9 +80,9 @@ export default function Home() {
 
               <div className="xl:flex justify-between items-center mt-12 xl:mt-8 text-center xl:text-left">
                 <p className="WelcomeText font-medium mb-8 xl:w-1/2">
-                <span className="font-bold text-black">
-                  Welcome to the CoronaSafe Engineering Fellowship!{" "}
-                </span>
+                  <span className="font-bold text-black">
+                    Welcome to the CoronaSafe Engineering Fellowship!{" "}
+                  </span>
                   CoronaSafe Engineering Fellowship is a national programme to identify the top 30 students in
                   software engineering for an industry-led training to become full-stack developers.
                 </p>
@@ -282,15 +282,15 @@ export default function Home() {
             <div className="mb-16">
               <h2>Impact</h2>
               <div className="mb-4">
-              <img className="mb-4 object-cover rounded-md " src="csn/impact.png"/>
+                <img className="mb-4 object-cover rounded-md " src="csn/impact.png"/>
                 <div className="text-xs mb-2">
                   Stats as of November 20, 2020
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <StatsWithTitleAndDescription title="200+" description="Hospitals Using the platform"/>
-                <StatsWithTitleAndDescription title="62K+" description="Patients Managed"/>
-                <StatsWithTitleAndDescription title="28K+" description="Shifting Managed"/>
-                <StatsWithTitleAndDescription title="2l+" description="Telemedicine Calls"/>
+                  <StatsWithTitleAndDescription title="200+" description="Hospitals Using the platform"/>
+                  <StatsWithTitleAndDescription title="62K+" description="Patients Managed"/>
+                  <StatsWithTitleAndDescription title="28K+" description="Shifting Managed"/>
+                  <StatsWithTitleAndDescription title="2l+" description="Telemedicine Calls"/>
                 </div>
               </div>
               <p>
@@ -378,7 +378,12 @@ export default function Home() {
                 applications.
               </p>
             </div>
+            <div>
+              <h2>Questions?</h2>
+              <p>Email us at <a href="mailto:fullstack@pupilfirst.org" className={"text-indigo-700"}>fullstack@pupilfirst.org</a></p>
+            </div>
           </div>
+
         </section>
       </main>
     </div>
