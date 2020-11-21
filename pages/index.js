@@ -7,7 +7,7 @@ function ApplyToCourse() {
         className="uppercase block px-10 py-4 bg-black text-lg text-white font-extrabold font-inter rounded-full"
         href="https://svlabs.typeform.com/to/CSv0H294"
       >
-        Apply to course
+        Apply for Fellowship
       </a>
     </div>
   );
@@ -34,6 +34,19 @@ function ImageWithDescription({name, caption, imgSrc}) {
         {caption}
       </p>
     </div>
+  )
+}
+
+function StatsWithTitleAndDescription({title, description}) {
+  return (
+      <div className="text-center">
+        <div className="font-semibold text-2xl">
+          {title}
+        </div>
+        <div className="text-sm">
+          {description}
+        </div>
+      </div>
   )
 }
 
@@ -239,32 +252,54 @@ export default function Home() {
               <p>
                 This program is created by a team of over a dozen people from across multiple companies, with
                 funding from the Michael &amp; Dell Foundation, the ACT
-                foundation, and support from FreshWorks. This funding enables us
-                to offer the course to you for free.{" "}
+                foundation, and support from FreshWorks.
+              </p>
+              <p>
+                ACT is an 100Crore fund setup by india’s leading tech entrepreneurs and venture capitalists
+                for supporting efforts. CoronaSafe is a recipient of ACT grants.
+              </p>
+              <p>
+                This funding enables us to offer the course to you for free.
               </p>
             </div>
 
             <div className="mb-16">
               <h2>Write open-source code for Corona disaster management</h2>
               <p>
-                This course is part of the CoronaSafe initiative that will let
-                you create open-source software used by government agencies for
-                public health and disaster management.
+                CoronaSafe Network codebase is a national asset created by india’s leading software industry
+                engineers along with National Health Mission, Government of India and Department of Health,
+                Government of Kerala.
               </p>
 
               <p>
-                The Corona Care software is currently being used in over 100
-                hospitals to record patient intake and availability of
-                facilities. This results in a central dashboard used by the
-                Ernakulam district collector’s office for monitoring and
-                allocating resources. The software is also guided by the Central
-                government’s National Health Mission.
+                Over 300+ industry software engineers have voluntarily contributed to build CoronaSafe Network.
+                The Corona Care software is currently being used in over 200 hospitals to record patient intake
+                and availability of facilities. This results in a central dashboard used by the Ernakulam
+                district collector’s office for monitoring and allocating resources.
               </p>
+            </div>
 
+            <div className="mb-16">
+              <h2>Impact</h2>
+              <div className="mb-4">
+              <img className="mb-4 object-cover rounded-md " src="csn/impact.png"/>
+                <div className="text-xs mb-2">
+                  Stats as of November 20, 2020
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <StatsWithTitleAndDescription title="200+" description="Hospitals Using the platform"/>
+                <StatsWithTitleAndDescription title="62K+" description="Patients Managed"/>
+                <StatsWithTitleAndDescription title="28K+" description="Shifting Managed"/>
+                <StatsWithTitleAndDescription title="2l+" description="Telemedicine Calls"/>
+                </div>
+              </div>
               <p>
-                This course is created to find and train students to help contribute to the CoronaSafe open-source
-                project. Once the course is over, you'll be invited to the project to help us create open-source
-                software built for public utility.
+                We are now looking to select 30 of the best student developers in India to become full stack
+                developers under industry guidance.
+              </p>
+              <p>
+                Successful students who complete the programme shall get a semester long internships with
+                CoronaSafe to contribute code to further develop this national asset.
               </p>
             </div>
 
