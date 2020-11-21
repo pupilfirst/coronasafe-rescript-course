@@ -5,7 +5,7 @@ function ApplyToCourse() {
     <div className="flex justify-center xl:justify-start">
       <a
         className="uppercase block px-10 py-4 bg-black text-lg text-white font-extrabold font-inter rounded-full"
-        href="/apply"
+        href="https://svlabs.typeform.com/to/CSv0H294"
       >
         Apply to course
       </a>
