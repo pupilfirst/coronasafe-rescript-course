@@ -2,7 +2,7 @@ import Head from "next/head";
 
 function ApplyToCourse() {
   return (
-    <div className="flex">
+    <div className="flex justify-center xl:justify-start">
       <a
         className="uppercase block px-10 py-4 bg-black text-lg text-white font-extrabold font-inter rounded-full"
         href="/apply"
@@ -17,8 +17,20 @@ function ApplyToCourse() {
 function HeroCharacter({caption, imgSrc}) {
   return (
     <div className="flex-shrink-0">
-      <img src={imgSrc} alt={caption} className={"bg-contain w-40 md:w-auto mx-auto"}/>
-      <p className="text-3xl md:text-4xl text-black font-monogame border-black mb-4">
+      <img src={imgSrc} alt={caption} className={"bg-contain w-40 lg:w-auto mx-auto"}/>
+      <p className="text-3xl lg:text-4xl text-black font-monogame border-black mb-4">
+        {caption}
+      </p>
+    </div>
+  )
+}
+
+function ImageWithDescription({name, caption, imgSrc}) {
+  return (
+    <div className="text-center text-base lg:text-lg xl:text-xl mb-12">
+      <img src={imgSrc} alt="Mekin" className="mb-8 inline w-32 xl:w-auto"/>
+      <p className={"font-medium mb-2 lg:mb-4"}>{name}</p>
+      <p className={"font-medium SupportedBy-desc"}>
         {caption}
       </p>
     </div>
@@ -45,16 +57,16 @@ export default function Home() {
         <section className="HeroWithPartnerLogos">
           <div className="ContentSection">
             <div className="Hero">
-              <div className="md:flex flex-shrink-0 items-baseline justify-center text-center">
+              <div className="lg:flex flex-shrink-0 items-baseline justify-center text-center">
                 <HeroCharacter caption={"Corona"} imgSrc={"hero/corona.png"}/>
                 <p
-                  className="Versus text-3xl md:text-4xl font-monogame border-black mb-4">v.
+                  className="Versus text-3xl lg:text-4xl font-monogame border-black mb-4">v.
                 </p>
                 <HeroCharacter caption={"Code"} imgSrc={"hero/code.png"}/>
               </div>
 
-              <div className="md:flex justify-between items-center mt-8">
-                <p className="WelcomeText font-medium mb-8 md:w-1/2">
+              <div className="xl:flex justify-between items-center mt-12 xl:mt-8 text-center xl:text-left">
+                <p className="WelcomeText font-medium mb-8 xl:w-1/2">
                 <span className="font-bold text-black">
                   Welcome to the CoronaSafe Engineering Fellowship!{" "}
                 </span>
@@ -78,7 +90,7 @@ export default function Home() {
 
 
         <section className="ContentSection">
-          <div className="max-w-3xl mx-auto text-2xl md:text-3xl font-inter font-bold leading-snug">
+          <div className="max-w-3xl mx-auto text-xl sm:text-2xl md:text-3xl font-inter font-bold leading-snug">
             <p className="">
               <span className="text-gray-700">
                 Build real-world, modern web apps.&nbsp;
@@ -99,18 +111,21 @@ export default function Home() {
         <section className="EverythingToKnow">
           <div className="ContentSection">
             <div className="max-w-2xl mx-auto leading-normal">
-              <h2 className="font-extrabold text-3xl mb-8">
+              <h2 className="font-extrabold text-2xl md:text-3xl mb-8">
                 Everything you need to know
               </h2>
               <p className="mb-2">
                 <span className="font-extrabold">What is this? </span>
-                Industry-led full-stack web development training to
-                contribute open-source code for CoronaSafe disaster management.
+                Industry-led advanced programming training for students.
               </p>
               <p className="mb-2">
-                <span className="font-extrabold">Who’s this for? </span>
+                <span className="font-extrabold">Why? </span>
+                To train you to help contribute open-source code for CoronaSafe disaster management.
+              </p>
+              <p className="mb-2">
+                <span className="font-extrabold">Who is this for? </span>
                 Age 18+ students who enjoy programming. You should have written
-                non-trivial code before; for your own or college projects.
+                non-trivial code before; for personal or college projects.
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">When? </span>
@@ -127,8 +142,8 @@ export default function Home() {
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Mentorship? </span>
-                Code reviews, dedicated Q&A forum, weekly sessions with mentors and fellow students,
-                AMAs with industry veterans.
+                Weekly sessions with mentors and fellow students,
+                AMAs with industry veterans, code reviews, and dedicated Q&A forum.
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Stack? </span>
@@ -146,41 +161,35 @@ export default function Home() {
 
         <section className="SupportedBy mb-16 text-center">
           <div className="ContentSection">
-            <h2 className="font-black text-2xl md:text-3xl text-center mb-16">
+            <h2 className="font-black text-xl md:text-2xl lg:text-3xl text-center mb-16">
               An initiative supported by
             </h2>
-            <div className="grid md:grid-cols-3 justify-center md:justify-between w-4/5 mx-auto">
-              <div className="text-center mb-12">
-                <img src="people/mekin.png" alt="Mekin" className="mb-8 inline"/>
-                <p className={"font-medium text-xl mb-4"}>Mekin Maheshwari</p>
-                <p className={"font-medium SupportedBy-desc"}>
-                  Founder, Udhyam.org <br/>
-                  ex-CTO, Flipkart
-                </p>
-              </div>
-              <div className="text-center mb-12">
-                <img src="people/girish.png" alt="Girish" className="mb-8 inline"/>
-                <p className={"font-medium text-xl mb-4"}>Girish Mathrubhootham</p>
-                <p className={"font-medium SupportedBy-desc"}>
-                  Founder & CEO, <br/>
-                  Freshworks Inc
-                </p>
-              </div>
-              <div className="text-center mb-12">
-                <img src="people/sanjay.png" alt="Sanjay" className="mb-8 inline"/>
-                <p className={"font-medium text-xl mb-4"}>Sanjay Vijayakumar</p>
-                <p className={"font-medium SupportedBy-desc"}>
-                  Founder & CEO,<br/>
-                  PupilFirst.org
-                </p>
-              </div>
+            <div className="grid lg:grid-cols-3 justify-center lg:justify-between mx-auto">
+              <ImageWithDescription name="Mekin Maheshwari"
+                                    caption={<>
+                                      Founder, Udhyam.org <br/>
+                                      ex-CTO, Flipkart</>}
+                                    imgSrc="people/mekin.png"
+              />
+              <ImageWithDescription name="Girish Mathrubhootham"
+                                    caption={<>
+                                      Founder & CEO, <br/>
+                                      Freshworks Inc</>}
+                                    imgSrc="people/girish.png"
+              />
+              <ImageWithDescription name="Sanjay Vijayakumar"
+                                    caption={<>
+                                      Founder & CEO,<br/>
+                                      PupilFirst.org</>}
+                                    imgSrc="people/sanjay.png"
+              />
             </div>
           </div>
         </section>
 
-        <section className="Testimonials">
+        <section className="Testimonials text-base md:text-lg lg:text-xl">
           <div className="ContentSection">
-            <div className="md:flex justify-between font-inter font-medium italic">
+            <div className="xl:flex justify-between font-inter font-medium italic">
               <div>
                 <blockquote className={"mr-4 mb-4"}>
                   This workshop was very intriguing. The instructors went to the extra mile by providing us with so much
@@ -312,7 +321,7 @@ export default function Home() {
                 you even long after.
               </p>
 
-              <h3>Build live, real-world software with Ruby on Rails</h3>
+              <h3>Create real-world Rails webapps</h3>
 
               <p>
                 Ruby on Rails pioneered the modern web framework revolution. It
