@@ -13,6 +13,18 @@ function ApplyToCourse() {
   );
 }
 
+
+function HeroCharacter({caption, imgSrc}) {
+  return (
+    <div className="flex-shrink-0">
+      <img src={imgSrc} alt={caption} className={"bg-contain w-40 md:w-auto mx-auto"}/>
+      <p className="text-3xl md:text-4xl text-black font-monogame border-black mb-4">
+        {caption}
+      </p>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <div className={""}>
@@ -33,24 +45,12 @@ export default function Home() {
         <section className="HeroWithPartnerLogos">
           <div className="ContentSection">
             <div className="Hero">
-              <div className="md:flex flex-shrink-0 items-baseline justify-center">
-                <div className="flex-shrink-0">
-                  <img src="hero/corona.png" alt="Corona Virus" className={"bg-contain"}/>
-                  <p
-                    className="text-3xl md:text-4xl text-black font-monogame border-black mb-4">Corona
-                  </p>
-                </div>
-
+              <div className="md:flex flex-shrink-0 items-baseline justify-center text-center">
+                <HeroCharacter caption={"Corona"} imgSrc={"hero/corona.png"}/>
                 <p
                   className="Versus text-3xl md:text-4xl font-monogame border-black mb-4">v.
                 </p>
-
-                <div className="flex-shrink-0 ">
-                  <img src="hero/code.png" alt="Code" className={"bg-contain"}/>
-                  <p
-                    className="text-3xl md:text-4xl text-black font-monogame border-black mb-4">Code
-                  </p>
-                </div>
+                <HeroCharacter caption={"Code"} imgSrc={"hero/code.png"}/>
               </div>
 
               <div className="md:flex justify-between items-center mt-8">
@@ -66,12 +66,14 @@ export default function Home() {
             </div>
           </div>
 
-          <section className="PartnerLogos p-8 md:p-20 md:flex justify-center items-center">
-            <img className="block mb-8" src="logos/dell.png"/>
-            <img className="block mb-8 md:ml-32" src="logos/freshworks.png"/>
-            <img className="block mb-8 md:ml-32" src="logos/aicte.png"/>
+          <section className="PartnerLogos">
+            <div className="ContentSection xl:flex justify-center items-center text-center">
+              <img className="block mx-auto mb-8 " src="logos/dell.png"/>
+              <img className="block mx-auto mb-8 xl:ml-32" src="logos/freshworks.png"/>
+              <img className="block mx-auto mb-8 xl:ml-32" src="logos/aicte.png"/>
+              <img className="block mx-auto mb-8 xl:ml-32" src="logos/wadhwani.png"/>
+            </div>
           </section>
-
         </section>
 
 
@@ -107,7 +109,7 @@ export default function Home() {
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Who’s this for? </span>
-                Age 18+ students. You should have written
+                Age 18+ students who enjoy programming. You should have written
                 non-trivial code before; for your own or college projects.
               </p>
               <p className="mb-2">
@@ -121,7 +123,7 @@ export default function Home() {
               <p className="mb-2">
                 <span className="font-extrabold">Format? </span>
                 Self-paced learning via video tutorials, but between specified
-                assignment submission dates.
+                programming assignment dates.
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Mentorship? </span>
@@ -130,7 +132,7 @@ export default function Home() {
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Stack? </span>
-                ReScript / OCaml. Ruby on Rails. React. PostgreSQL. Typed FP.
+                ReScript/OCaml. Ruby on Rails. React. PostgreSQL. Typed FP.
                 Relax! You'll learn all these in the course and no prior knowledge of them is required.
               </p>
               <p className="mb-12">
@@ -217,7 +219,7 @@ export default function Home() {
 
         <section className="Longform ContentSection">
           <div className="max-w-2xl mx-auto">
-            <div className="mb-16">
+            <div className="mb-16 hidden md:block">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/RYAu0CmB-TA" frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen></iframe>

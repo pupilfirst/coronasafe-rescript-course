@@ -59,15 +59,16 @@ body {
 }
 
 .Longform h2 {
-  @apply text-3xl font-bold mt-12 pt-8 mb-4;
+  @apply text-xl font-bold mt-12 pt-8 mb-4;
 }
 
 .Longform h3 {
-  @apply text-2xl text-gray-700 font-medium mt-6 mb-2;
+  @apply text-xl text-gray-700 font-medium mt-6 mb-2;
 }
 
 .Longform p {
   @apply mb-4;
+  @apply text-base;
 }
 
 .Testimonials {
