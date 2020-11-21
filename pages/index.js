@@ -282,7 +282,7 @@ export default function Home() {
             <div className="mb-16">
               <h2>Impact</h2>
               <div className="mb-4">
-              <img className="mb-4 object-cover rounded-md " src="https://assets.zyrosite.com//Yyve4DOKXjcZ8bJ0/Screenshot-from-mp8Bw5WPbBHGrWPO-w1370.png"/>
+              <img className="mb-4 object-cover rounded-md " src="csn/impact.png"/>
                 <div className="text-xs mb-2">
                   Stats as of November 20, 2020
                 </div>
