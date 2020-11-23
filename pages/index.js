@@ -28,7 +28,7 @@ function HeroCharacter({caption, imgSrc}) {
 function ImageWithDescription({name, caption, imgSrc}) {
   return (
     <div className="text-center text-base lg:text-lg xl:text-xl mb-12">
-      <img src={imgSrc} alt="Mekin" className="mb-8 inline w-32 xl:w-auto"/>
+      <img src={imgSrc} alt={caption} className="mb-8 inline w-32 xl:w-auto"/>
       <p className={"font-medium mb-2 lg:mb-4"}>{name}</p>
       <p className={"font-medium SupportedBy-desc"}>
         {caption}
@@ -39,14 +39,14 @@ function ImageWithDescription({name, caption, imgSrc}) {
 
 function StatsWithTitleAndDescription({title, description}) {
   return (
-      <div className="text-center">
-        <div className="font-semibold text-2xl">
-          {title}
-        </div>
-        <div className="text-sm">
-          {description}
-        </div>
+    <div className="text-center">
+      <div className="font-semibold text-2xl">
+        {title}
       </div>
+      <div className="text-sm">
+        {description}
+      </div>
+    </div>
   )
 }
 
@@ -80,9 +80,9 @@ export default function Home() {
 
               <div className="xl:flex justify-between items-center mt-12 xl:mt-8 text-center xl:text-left">
                 <p className="WelcomeText font-medium mb-8 xl:w-1/2">
-                <span className="font-bold text-black">
-                  Welcome to the CoronaSafe Engineering Fellowship!{" "}
-                </span>
+                  <span className="font-bold text-black">
+                    Welcome to the CoronaSafe Engineering Fellowship!{" "}
+                  </span>
                   CoronaSafe Engineering Fellowship is a national programme to identify the top 30 students in
                   software engineering for an industry-led training to become full-stack developers.
                 </p>
@@ -137,8 +137,8 @@ export default function Home() {
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Who is this for? </span>
-                Age 18+ students who enjoy programming. You should have written
-                non-trivial code before; for personal or college projects.
+                Age 18+ students who enjoy programming. You should have written at least
+                some amount of code yourselves before, either on personal projects or college projects.
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">When? </span>
@@ -146,7 +146,7 @@ export default function Home() {
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Effort? </span>
-                120 hours of highly enjoyable study. About 10 weekends worth.
+                120 hours of highly enjoyable study & programming. About 10 weekends worth.
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Format? </span>
@@ -163,9 +163,13 @@ export default function Home() {
                 ReScript/OCaml. Ruby on Rails. React. PostgreSQL. Typed FP.
                 Relax! You'll learn all these in the course and no prior knowledge of them is required.
               </p>
-              <p className="mb-12">
+              <p className="mb-2">
                 <span className="font-extrabold">Certificate? </span>
                 Yes!
+              </p>
+              <p className="mb-12">
+                <span className="font-extrabold">Cost? </span>
+                Free!
               </p>
               <ApplyToCourse/>
             </div>
@@ -231,7 +235,7 @@ export default function Home() {
                 <blockquote className={"mr-4 mb-4"}>
                   Loved everything about this course.
                   It was great to receive feedback from industry professionals. We learned a lot outside the curriculum
-                  while doing the project - Github, CSS, JS, and the assignments were exceptionally good in testing our
+                  while doing the project including git, GitHub, CSS, and JavaScript. And the assignments were exceptionally good in testing our
                   knowledge about that week's syllabus.
                 </blockquote>
               </div>
@@ -251,12 +255,11 @@ export default function Home() {
               <h2>Free</h2>
               <p>
                 This program is created by a team of over a dozen people from across multiple companies, with
-                funding from the Michael &amp; Dell Foundation, the ACT
-                foundation, and support from FreshWorks.
+                funding from the Michael &amp; Dell Foundation, the ACT foundation, and support from FreshWorks.
               </p>
               <p>
-                ACT is an 100Crore fund setup by india’s leading tech entrepreneurs and venture capitalists
-                for supporting efforts. CoronaSafe is a recipient of ACT grants.
+                ACT is a 100 crore fund setup by India’s leading tech entrepreneurs and venture capitalists
+                for supporting efforts combating COVID-19. CoronaSafe is a recipient of ACT grants.
               </p>
               <p>
                 This funding enables us to offer the course to you for free.
@@ -266,8 +269,8 @@ export default function Home() {
             <div className="mb-16">
               <h2>Write open-source code for Corona disaster management</h2>
               <p>
-                CoronaSafe Network codebase is a national asset created by india’s leading software industry
-                engineers along with National Health Mission, Government of India and Department of Health,
+                CoronaSafe Network codebase is a national asset created by India’s leading software industry
+                engineers along with the National Health Mission, Government of India and Department of Health,
                 Government of Kerala.
               </p>
 
@@ -282,15 +285,15 @@ export default function Home() {
             <div className="mb-16">
               <h2>Impact</h2>
               <div className="mb-4">
-              <img className="mb-4 object-cover rounded-md " src="csn/impact.png"/>
+                <img className="mb-4 object-cover rounded-md " src="csn/impact.png"/>
                 <div className="text-xs mb-2">
                   Stats as of November 20, 2020
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <StatsWithTitleAndDescription title="200+" description="Hospitals Using the platform"/>
-                <StatsWithTitleAndDescription title="62K+" description="Patients Managed"/>
-                <StatsWithTitleAndDescription title="28K+" description="Shifting Managed"/>
-                <StatsWithTitleAndDescription title="2l+" description="Telemedicine Calls"/>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <StatsWithTitleAndDescription title="200+" description="Hospitals Using the platform"/>
+                  <StatsWithTitleAndDescription title="62K+" description="Patients Managed"/>
+                  <StatsWithTitleAndDescription title="28K+" description="Shifting Managed"/>
+                  <StatsWithTitleAndDescription title="2l+" description="Telemedicine Calls"/>
                 </div>
               </div>
               <p>
@@ -298,7 +301,7 @@ export default function Home() {
                 developers under industry guidance.
               </p>
               <p>
-                Successful students who complete the programme shall get a semester long internships with
+                Successful students who complete the programme shall get a semester long internship with
                 CoronaSafe to contribute code to further develop this national asset.
               </p>
             </div>
@@ -309,7 +312,7 @@ export default function Home() {
               <p>
                 This is an industry-backed course and it will prepare you for a
                 career in building production software. This reflects in what
-                you will learn, and how you learn it. Each of your code
+                you will learn, and how you will learn it. Each of your code
                 submission will be reviewed in depth by a coach and your code
                 will get kind, courteous feedback. You will gain hard-earned insights
                 about abstraction boundaries, data modelling,
@@ -371,14 +374,20 @@ export default function Home() {
 
               <p>
                 You’ll learn to program in the Typed Functional paradigm in
-                ReScript/OCaml. ReScript compiles down to efficient JavaScript
-                and has excellent support for building front-end with React.
-                During the course you will create everything from simple
-                interactive UIs to user input forms, games, and single-page
-                applications.
+                ReScript/OCaml. You'll create UIs in React and deploy your
+                own single-page applications. You'll also learn practical functional programming and learn to model
+                complex domains with Hindley-Milner types. ReScript/OCaml will also help you see what programming languages
+                are really made of. That means you will then be able to learn and be productive with any other programming language much
+                faster.
               </p>
             </div>
+            <div>
+              <h2>Questions?</h2>
+              <p>Email us at <a href="mailto:fullstack@pupilfirst.org"
+                                className={"text-indigo-700"}>fullstack@pupilfirst.org</a></p>
+            </div>
           </div>
+
         </section>
       </main>
     </div>
