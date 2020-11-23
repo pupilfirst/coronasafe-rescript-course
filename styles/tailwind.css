@@ -12,7 +12,7 @@ body {
 .ContentSection {
   @apply max-w-screen-sm mx-auto;
   @apply py-8;
-  @apply px-8;
+  @apply px-6;
 }
 
 @screen sm {
@@ -59,20 +59,20 @@ body {
 }
 
 .Longform h2 {
-  @apply text-3xl font-bold mt-12 pt-8 mb-4;
+  @apply text-xl font-bold mt-12 pt-8 mb-4;
 }
 
 .Longform h3 {
-  @apply text-2xl text-gray-700 font-medium mt-6 mb-2;
+  @apply text-base text-gray-700 font-medium mt-6 mb-2;
 }
 
 .Longform p {
   @apply mb-4;
+  @apply text-base;
 }
 
 .Testimonials {
   color: #5C5F6D;
-  font-size: 18px;
 }
 
 .Testimonials blockquote {
@@ -97,5 +97,4 @@ body {
 
 .SupportedBy-desc {
   color: rgba(0, 0, 0, 0.4);
-  font-size: 18px;
 }

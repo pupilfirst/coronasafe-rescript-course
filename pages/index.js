@@ -2,15 +2,52 @@ import Head from "next/head";
 
 function ApplyToCourse() {
   return (
-    <div className="flex">
+    <div className="flex justify-center xl:justify-start">
       <a
         className="uppercase block px-10 py-4 bg-black text-lg text-white font-extrabold font-inter rounded-full"
-        href="/apply"
+        href="https://svlabs.typeform.com/to/CSv0H294"
       >
-        Apply to course
+        Apply for Fellowship
       </a>
     </div>
   );
+}
+
+
+function HeroCharacter({caption, imgSrc}) {
+  return (
+    <div className="flex-shrink-0">
+      <img src={imgSrc} alt={caption} className={"bg-contain w-40 lg:w-auto mx-auto"}/>
+      <p className="text-3xl lg:text-4xl text-black font-monogame border-black mb-4">
+        {caption}
+      </p>
+    </div>
+  )
+}
+
+function ImageWithDescription({name, caption, imgSrc}) {
+  return (
+    <div className="text-center text-base lg:text-lg xl:text-xl mb-12">
+      <img src={imgSrc} alt={caption} className="mb-8 inline w-32 xl:w-auto"/>
+      <p className={"font-medium mb-2 lg:mb-4"}>{name}</p>
+      <p className={"font-medium SupportedBy-desc"}>
+        {caption}
+      </p>
+    </div>
+  )
+}
+
+function StatsWithTitleAndDescription({title, description}) {
+  return (
+    <div className="text-center">
+      <div className="font-semibold text-2xl">
+        {title}
+      </div>
+      <div className="text-sm">
+        {description}
+      </div>
+    </div>
+  )
 }
 
 export default function Home() {
@@ -33,31 +70,19 @@ export default function Home() {
         <section className="HeroWithPartnerLogos">
           <div className="ContentSection">
             <div className="Hero">
-              <div className="md:flex flex-shrink-0 items-baseline justify-center">
-                <div className="flex-shrink-0">
-                  <img src="hero/corona.png" alt="Corona Virus" className={"bg-contain"}/>
-                  <p
-                    className="text-3xl md:text-4xl text-black font-monogame border-black mb-4">Corona
-                  </p>
-                </div>
-
+              <div className="lg:flex flex-shrink-0 items-baseline justify-center text-center">
+                <HeroCharacter caption={"Corona"} imgSrc={"hero/corona.png"}/>
                 <p
-                  className="Versus text-3xl md:text-4xl font-monogame border-black mb-4">v.
+                  className="Versus text-3xl lg:text-4xl font-monogame border-black mb-4">v.
                 </p>
-
-                <div className="flex-shrink-0 ">
-                  <img src="hero/code.png" alt="Code" className={"bg-contain"}/>
-                  <p
-                    className="text-3xl md:text-4xl text-black font-monogame border-black mb-4">Code
-                  </p>
-                </div>
+                <HeroCharacter caption={"Code"} imgSrc={"hero/code.png"}/>
               </div>
 
-              <div className="md:flex justify-between items-center mt-8">
-                <p className="WelcomeText font-medium mb-8 md:w-1/2">
-                <span className="font-bold text-black">
-                  Welcome to the CoronaSafe Engineering Fellowship!{" "}
-                </span>
+              <div className="xl:flex justify-between items-center mt-12 xl:mt-8 text-center xl:text-left">
+                <p className="WelcomeText font-medium mb-8 xl:w-1/2">
+                  <span className="font-bold text-black">
+                    Welcome to the CoronaSafe Engineering Fellowship!{" "}
+                  </span>
                   CoronaSafe Engineering Fellowship is a national programme to identify the top 30 students in
                   software engineering for an industry-led training to become full-stack developers.
                 </p>
@@ -66,17 +91,19 @@ export default function Home() {
             </div>
           </div>
 
-          <section className="PartnerLogos p-8 md:p-20 md:flex justify-center items-center">
-            <img className="block mb-8" src="logos/dell.png"/>
-            <img className="block mb-8 md:ml-32" src="logos/freshworks.png"/>
-            <img className="block mb-8 md:ml-32" src="logos/aicte.png"/>
+          <section className="PartnerLogos">
+            <div className="ContentSection xl:flex justify-center items-center text-center">
+              <img className="block mx-auto mb-8 " src="logos/dell.png"/>
+              <img className="block mx-auto mb-8 xl:ml-32" src="logos/freshworks.png"/>
+              <img className="block mx-auto mb-8 xl:ml-32" src="logos/aicte.png"/>
+              <img className="block mx-auto mb-8 xl:ml-32" src="logos/wadhwani.png"/>
+            </div>
           </section>
-
         </section>
 
 
         <section className="ContentSection">
-          <div className="max-w-3xl mx-auto text-2xl md:text-3xl font-inter font-bold leading-snug">
+          <div className="max-w-3xl mx-auto text-xl sm:text-2xl md:text-3xl font-inter font-bold leading-snug">
             <p className="">
               <span className="text-gray-700">
                 Build real-world, modern web apps.&nbsp;
@@ -97,18 +124,21 @@ export default function Home() {
         <section className="EverythingToKnow">
           <div className="ContentSection">
             <div className="max-w-2xl mx-auto leading-normal">
-              <h2 className="font-extrabold text-3xl mb-8">
+              <h2 className="font-extrabold text-2xl md:text-3xl mb-8">
                 Everything you need to know
               </h2>
               <p className="mb-2">
                 <span className="font-extrabold">What is this? </span>
-                Industry-led full-stack web development training to
-                contribute open-source code for CoronaSafe disaster management.
+                Industry-led advanced programming training for students.
               </p>
               <p className="mb-2">
-                <span className="font-extrabold">Who’s this for? </span>
-                Age 18+ student & junior programmers. You should have written
-                non-trivial code before; for your own or workplace projects.
+                <span className="font-extrabold">Why? </span>
+                To train you to help contribute open-source code for CoronaSafe disaster management.
+              </p>
+              <p className="mb-2">
+                <span className="font-extrabold">Who is this for? </span>
+                Age 18+ students who enjoy programming. You should have written at least
+                some amount of code yourselves before, either on personal projects or college projects.
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">When? </span>
@@ -116,26 +146,30 @@ export default function Home() {
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Effort? </span>
-                120 hours of highly enjoyable study. About 10 weekends worth.
+                120 hours of highly enjoyable study & programming. About 10 weekends worth.
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Format? </span>
                 Self-paced learning via video tutorials, but between specified
-                assignment submission dates.
+                programming assignment dates.
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Mentorship? </span>
-                Code reviews, dedicated Q&A forum, weekly sessions with mentors and fellow students,
-                AMAs with industry veterans.
+                Weekly sessions with mentors and fellow students,
+                AMAs with industry veterans, code reviews, and dedicated Q&A forum.
               </p>
               <p className="mb-2">
                 <span className="font-extrabold">Stack? </span>
-                ReScript / OCaml. Ruby on Rails. React. PostgreSQL. Typed FP.
+                ReScript/OCaml. Ruby on Rails. React. PostgreSQL. Typed FP.
                 Relax! You'll learn all these in the course and no prior knowledge of them is required.
               </p>
-              <p className="mb-12">
+              <p className="mb-2">
                 <span className="font-extrabold">Certificate? </span>
                 Yes!
+              </p>
+              <p className="mb-12">
+                <span className="font-extrabold">Cost? </span>
+                Free!
               </p>
               <ApplyToCourse/>
             </div>
@@ -144,41 +178,35 @@ export default function Home() {
 
         <section className="SupportedBy mb-16 text-center">
           <div className="ContentSection">
-            <h2 className="font-black text-2xl md:text-3xl text-center mb-16">
+            <h2 className="font-black text-xl md:text-2xl lg:text-3xl text-center mb-16">
               An initiative supported by
             </h2>
-            <div className="grid md:grid-cols-3 justify-center md:justify-between w-4/5 mx-auto">
-              <div className="text-center mb-12">
-                <img src="people/mekin.png" alt="Mekin" className="mb-8 inline"/>
-                <p className={"font-medium text-xl mb-4"}>Mekin Maheshwari</p>
-                <p className={"font-medium SupportedBy-desc"}>
-                  Founder, Udhyam.org <br/>
-                  ex-CTO, Flipkart
-                </p>
-              </div>
-              <div className="text-center mb-12">
-                <img src="people/girish.png" alt="Girish" className="mb-8 inline"/>
-                <p className={"font-medium text-xl mb-4"}>Girish Mathrubhootham</p>
-                <p className={"font-medium SupportedBy-desc"}>
-                  Founder & CEO, <br/>
-                  Freshworks Inc
-                </p>
-              </div>
-              <div className="text-center mb-12">
-                <img src="people/sanjay.png" alt="Sanjay" className="mb-8 inline"/>
-                <p className={"font-medium text-xl mb-4"}>Sanjay Vijayakumar</p>
-                <p className={"font-medium SupportedBy-desc"}>
-                  Founder & CEO,<br/>
-                  PupilFirst.org
-                </p>
-              </div>
+            <div className="grid lg:grid-cols-3 justify-center lg:justify-between mx-auto">
+              <ImageWithDescription name="Mekin Maheshwari"
+                                    caption={<>
+                                      Founder, Udhyam.org <br/>
+                                      ex-CTO, Flipkart</>}
+                                    imgSrc="people/mekin.png"
+              />
+              <ImageWithDescription name="Girish Mathrubhootham"
+                                    caption={<>
+                                      Founder & CEO, <br/>
+                                      Freshworks Inc</>}
+                                    imgSrc="people/girish.png"
+              />
+              <ImageWithDescription name="Sanjay Vijayakumar"
+                                    caption={<>
+                                      Founder & CEO,<br/>
+                                      PupilFirst.org</>}
+                                    imgSrc="people/sanjay.png"
+              />
             </div>
           </div>
         </section>
 
-        <section className="Testimonials">
+        <section className="Testimonials text-base md:text-lg lg:text-xl">
           <div className="ContentSection">
-            <div className="md:flex justify-between font-inter font-medium italic">
+            <div className="xl:flex justify-between font-inter font-medium italic">
               <div>
                 <blockquote className={"mr-4 mb-4"}>
                   This workshop was very intriguing. The instructors went to the extra mile by providing us with so much
@@ -207,7 +235,7 @@ export default function Home() {
                 <blockquote className={"mr-4 mb-4"}>
                   Loved everything about this course.
                   It was great to receive feedback from industry professionals. We learned a lot outside the curriculum
-                  while doing the project - Github, CSS, JS, and the assignments were exceptionally good in testing our
+                  while doing the project including git, GitHub, CSS, and JavaScript. And the assignments were exceptionally good in testing our
                   knowledge about that week's syllabus.
                 </blockquote>
               </div>
@@ -217,7 +245,7 @@ export default function Home() {
 
         <section className="Longform ContentSection">
           <div className="max-w-2xl mx-auto">
-            <div className="mb-16">
+            <div className="mb-16 hidden md:block">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/RYAu0CmB-TA" frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen></iframe>
@@ -227,33 +255,54 @@ export default function Home() {
               <h2>Free</h2>
               <p>
                 This program is created by a team of over a dozen people from across multiple companies, with
-                funding from the Michael &amp; Dell Foundation, the ACT
-                foundation, and support from FreshWorks. This funding enables us
-                to offer the course to you for free.{" "}
+                funding from the Michael &amp; Dell Foundation, the ACT foundation, and support from FreshWorks.
+              </p>
+              <p>
+                ACT is a 100 crore fund setup by India’s leading tech entrepreneurs and venture capitalists
+                for supporting efforts combating COVID-19. CoronaSafe is a recipient of ACT grants.
+              </p>
+              <p>
+                This funding enables us to offer the course to you for free.
               </p>
             </div>
 
             <div className="mb-16">
               <h2>Write open-source code for Corona disaster management</h2>
               <p>
-                This course is part of the CoronaSafe initiative that will let
-                you create open-source software used by government agencies for
-                public health and disaster management.
+                CoronaSafe Network codebase is a national asset created by India’s leading software industry
+                engineers along with the National Health Mission, Government of India and Department of Health,
+                Government of Kerala.
               </p>
 
               <p>
-                The Corona Care software is currently being used in over 100
-                hospitals to record patient intake and availability of
-                facilities. This results in a central dashboard used by the
-                Ernakulam district collector’s office for monitoring and
-                allocating resources. The software is also guided by the Central
-                government’s National Health Mission.
+                Over 300+ industry software engineers have voluntarily contributed to build CoronaSafe Network.
+                The Corona Care software is currently being used in over 200 hospitals to record patient intake
+                and availability of facilities. This results in a central dashboard used by the Ernakulam
+                district collector’s office for monitoring and allocating resources.
               </p>
+            </div>
 
+            <div className="mb-16">
+              <h2>Impact</h2>
+              <div className="mb-4">
+                <img className="mb-4 object-cover rounded-md " src="csn/impact.png"/>
+                <div className="text-xs mb-2">
+                  Stats as of November 20, 2020
+                </div>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <StatsWithTitleAndDescription title="200+" description="Hospitals Using the platform"/>
+                  <StatsWithTitleAndDescription title="62K+" description="Patients Managed"/>
+                  <StatsWithTitleAndDescription title="28K+" description="Shifting Managed"/>
+                  <StatsWithTitleAndDescription title="2l+" description="Telemedicine Calls"/>
+                </div>
+              </div>
               <p>
-                This course is created to find and train students to help contribute to the CoronaSafe open-source
-                project. Once the course is over, you'll be invited to the project to help us create open-source
-                software built for public utility.
+                We are now looking to select 30 of the best student developers in India to become full stack
+                developers under industry guidance.
+              </p>
+              <p>
+                Successful students who complete the programme shall get a semester long internship with
+                CoronaSafe to contribute code to further develop this national asset.
               </p>
             </div>
 
@@ -263,7 +312,7 @@ export default function Home() {
               <p>
                 This is an industry-backed course and it will prepare you for a
                 career in building production software. This reflects in what
-                you will learn, and how you learn it. Each of your code
+                you will learn, and how you will learn it. Each of your code
                 submission will be reviewed in depth by a coach and your code
                 will get kind, courteous feedback. You will gain hard-earned insights
                 about abstraction boundaries, data modelling,
@@ -310,7 +359,7 @@ export default function Home() {
                 you even long after.
               </p>
 
-              <h3>Build live, real-world software with Ruby on Rails</h3>
+              <h3>Create real-world Rails webapps</h3>
 
               <p>
                 Ruby on Rails pioneered the modern web framework revolution. It
@@ -325,14 +374,20 @@ export default function Home() {
 
               <p>
                 You’ll learn to program in the Typed Functional paradigm in
-                ReScript/OCaml. ReScript compiles down to efficient JavaScript
-                and has excellent support for building front-end with React.
-                During the course you will create everything from simple
-                interactive UIs to user input forms, games, and single-page
-                applications.
+                ReScript/OCaml. You'll create UIs in React and deploy your
+                own single-page applications. You'll also learn practical functional programming and learn to model
+                complex domains with Hindley-Milner types. ReScript/OCaml will also help you see what programming languages
+                are really made of. That means you will then be able to learn and be productive with any other programming language much
+                faster.
               </p>
             </div>
+            <div>
+              <h2>Questions?</h2>
+              <p>Email us at <a href="mailto:fullstack@pupilfirst.org"
+                                className={"text-indigo-700"}>fullstack@pupilfirst.org</a></p>
+            </div>
           </div>
+
         </section>
       </main>
     </div>

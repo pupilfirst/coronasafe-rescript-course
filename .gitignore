@@ -35,5 +35,5 @@ yarn-error.log*
 
 # custom - keep tailwind generated CSS out of git. 
 # it is used only during dev for quick style lookup.
-styles.css
+generated_ignore.css
 
