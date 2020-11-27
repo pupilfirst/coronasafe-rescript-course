@@ -245,8 +245,8 @@ export default function Home() {
 
         <section className="Longform ContentSection">
           <div className="max-w-2xl mx-auto">
-            <div className="mb-16 hidden md:block">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/RYAu0CmB-TA" frameBorder="0"
+            <div className="mb-16 md:block">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/BjrPsEOZyi4" frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen></iframe>
             </div>
