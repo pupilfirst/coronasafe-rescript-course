@@ -1,4 +1,9 @@
-npm run export
-tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./build/*
-caprover deploy -t ./deploy.tar --caproverApp root-static-site --caproverName=caprover-xyno
-rm deploy.tar
+#!/bin/bash
+
+rm -rf build && npm run export
+
+REMOTE_USER=deploy
+REMOTE_IP=irvrnt.com
+REMOTE_DIR=/home/deploy/root_website
+ssh ${REMOTE_USER}@${REMOTE_IP} "mkdir ${REMOTE_DIR}"
+rsync -acvzh ./public/* ${REMOTE_USER}@${REMOTE_IP}:${REMOTE_DIR}
