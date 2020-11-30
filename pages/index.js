@@ -188,7 +188,7 @@ export default function Home() {
                                       ex-CTO, Flipkart</>}
                                     imgSrc="people/mekin.png"
               />
-              <ImageWithDescription name="Girish Mathrubhootham"
+              <ImageWithDescription name="Girish Mathrubootham"
                                     caption={<>
                                       Founder & CEO, <br/>
                                       Freshworks Inc</>}
