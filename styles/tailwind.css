@@ -1,9 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
-  @apply font-inter;
+  @apply font-spacemono;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -31,6 +30,36 @@ body {
   }
 }
 
+h1, h2, h3, h4 {
+  @apply font-bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+.heading-with-leftborder {
+  @apply relative;
+}
+
+.heading-with-leftborder::before {
+  @apply absolute bg-primary-500 rounded-r-md h-full top-0 left-0;
+  content: '';
+  width: 8px;
+}
+
 .WelcomeText {
   color: rgba(14, 16, 27, 0.6);
 }
@@ -42,7 +71,6 @@ body {
 .PartnerLogos {
   background-color: #C9CEE4;
 }
-
 
 .EverythingToKnow {
   background-color: rgba(255, 184, 0, 0.6);
