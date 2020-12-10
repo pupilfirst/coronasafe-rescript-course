@@ -60,6 +60,17 @@ h4 {
   width: 8px;
 }
 
+.heading-with-underscore {
+  @apply relative pl-8;
+}
+
+.heading-with-underscore::before {
+  @apply absolute bg-white h-0.5 w-4;
+  content: '';
+  bottom: 10px;
+  left: 4px;
+}
+
 .WelcomeText {
   color: rgba(14, 16, 27, 0.6);
 }
