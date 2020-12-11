@@ -84,30 +84,35 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="-mt-20">
+        <section className="-mt-20 mx-4 lg:mx-0">
           <div className="bg-white rounded-lg shadow-md max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="grid grid-cols-2 gap-y-8 lg:gap-y-0 gap-4 md:grid-cols-3 lg:grid-cols-6">
+              <div className="flex justify-center">
+                <div className="w-44 flex items-center">
+                  <img className="h-full object-contain" src="logos/NSTEDB-logo.svg" alt="National Science and Technology Entrepreneurship Development Board" />
+                </div>
+              </div>
+              <div className="flex justify-center">
                 <div className="w-32 flex items-center">
                   <img className="h-full object-contain" src="logos/act-grants-logo.png" alt="Act grants - Action COVID-19 Team" />
                 </div>
               </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <div className="flex justify-center">
                 <div className="w-36 flex items-center">
                   <img className="h-full object-contain" src="logos/msdf-logo.png" alt="Michael &amp; Susan Dell Foundation" />
                 </div>
               </div>
-              <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <div className="flex justify-center">
                 <div className="w-24 flex items-center">
                   <img className="h-full object-contain" src="logos/wadhwani-foundation-logo.png" alt="Wadhwani Foundation" />
                 </div>
               </div>
-              <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+              <div className="flex justify-center">
                 <div className="w-32 flex items-center">
                   <img className="h-full object-contain" src="logos/freshworks-logo.svg" alt="Freshworks" />
                 </div>
               </div>
-              <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+              <div className="flex justify-center">
                 <div className="w-32 flex items-center">
                   <img className="h-full object-contain" src="logos/pupilfirst-logo.svg" alt="Pupilfirst" />
                 </div>
@@ -369,7 +374,7 @@ export default function Home() {
               </div>
             </div>
             <div className="max-w-3xl mx-auto">
-              <div className="border rounded-lg border-primary-500 divide-y divide-primary-500 mt-4">
+              <div className="border rounded-lg bg-gray-900 shadow-xl border-primary-500 divide-y divide-primary-500 mt-4">
                 <div className="md:grid md:grid-cols-12 py-4">
                   <p className="col-span-3 text-primary-500 text-right">December 14, 2020</p>
                   <p className="col-span-9 ml-8 text-white">- Application Opens</p>
