@@ -89,32 +89,32 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-y-8 lg:gap-y-0 gap-4 md:grid-cols-3 lg:grid-cols-6">
               <div className="flex justify-center">
                 <div className="w-44 flex items-center">
-                  <img className="h-full object-contain" src="logos/NSTEDB-logo.svg" alt="National Science and Technology Entrepreneurship Development Board" />
+                  <img className="object-contain" src="logos/NSTEDB-logo.svg" alt="National Science and Technology Entrepreneurship Development Board" />
                 </div>
               </div>
               <div className="flex justify-center">
                 <div className="w-32 flex items-center">
-                  <img className="h-full object-contain" src="logos/act-grants-logo.png" alt="Act grants - Action COVID-19 Team" />
+                  <img className="object-contain" src="logos/act-grants-logo.png" alt="Act grants - Action COVID-19 Team" />
                 </div>
               </div>
               <div className="flex justify-center">
                 <div className="w-36 flex items-center">
-                  <img className="h-full object-contain" src="logos/msdf-logo.png" alt="Michael &amp; Susan Dell Foundation" />
+                  <img className="object-contain" src="logos/msdf-logo.png" alt="Michael &amp; Susan Dell Foundation" />
                 </div>
               </div>
               <div className="flex justify-center">
                 <div className="w-24 flex items-center">
-                  <img className="h-full object-contain" src="logos/wadhwani-foundation-logo.png" alt="Wadhwani Foundation" />
+                  <img className="object-contain" src="logos/wadhwani-foundation-logo.png" alt="Wadhwani Foundation" />
                 </div>
               </div>
               <div className="flex justify-center">
                 <div className="w-32 flex items-center">
-                  <img className="h-full object-contain" src="logos/freshworks-logo.svg" alt="Freshworks" />
+                  <img className="object-contain" src="logos/freshworks-logo.svg" alt="Freshworks" />
                 </div>
               </div>
               <div className="flex justify-center">
                 <div className="w-32 flex items-center">
-                  <img className="h-full object-contain" src="logos/pupilfirst-logo.svg" alt="Pupilfirst" />
+                  <img className="object-contain" src="logos/pupilfirst-logo.svg" alt="Pupilfirst" />
                 </div>
               </div>
             </div>
@@ -253,7 +253,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="max-w-3xl mx-auto text-white">
-                <div className="pt-8 pb-20 space-y-20">
+                <div className="pt-8 pb-20 space-y-12 md:space-y-20">
                   <blockquote className="testimonial-blockquote pl-12 lg:pl-16">This workshop was very intriguing. The instructors went to the extra mile by providing us with so much references to books, blogs and talks we could refer to. The most impressive thing was the effort they took to print out research papers and hand out a spiral bound copy to every one!! I mean the kind of commitment they have towards this just swayed us and shows their love for programming and how keen they are towards building a community. This workshop was very inspiring and a significant memory to hold on to.</blockquote>
                   <blockquote className="testimonial-blockquote pl-12 lg:pl-16">The final product that we were asked to build was amazing. There were plenty of things that we were able to learn ourselves towards that journey. I am glad that we were able to create such a good product</blockquote>
                   <blockquote className="testimonial-blockquote pl-12 lg:pl-16">The experience which I had while doing the course was different, interesting, enjoyable and a bit difficult at the same time from the rest of the courses which I have done so far. The PupilFirst platform helped a lot in better understanding of the course and also the faculties, teaching assistants and course co-ordinators were reachable at any time and responsive even in this pandemic situation.</blockquote>
