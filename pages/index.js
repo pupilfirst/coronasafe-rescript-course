@@ -28,7 +28,7 @@ function HeroCharacter({ caption, imgSrc }) {
 function ImageWithDescription({ name, caption, imgSrc }) {
   return (
     <div>
-      <div className="rounded-lg border-2 border-primary-500 ">
+      <div className="rounded-lg border-2 border-primary-500 w-5/6 md:w-auto ">
         <img src={imgSrc} alt={caption} className="block object-contain rounded-lg" />
       </div>
       <h4 className={"text-lg text-primary-500 pt-2"}>{name}</h4>
@@ -216,7 +216,7 @@ export default function Home() {
                 <rect width="120" height="400" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
               </svg>
               <div className="max-w-3xl mx-auto relative z-10 pl-4 lg:pl-0">
-                <div className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 md:gap-12 pt-12 pb-20">
+                <div className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-4 md:gap-12 py-12 lg:pb-20">
                   <ImageWithDescription name="Mekin Maheshwari"
                     caption={<>
                       Founder, Udhyam.org <br />ex-CTO, Flipkart</>}
