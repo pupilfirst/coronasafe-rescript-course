@@ -57,7 +57,13 @@ h4 {
 .heading-with-leftborder::before {
   @apply absolute bg-primary-500 rounded-r-md h-full top-0 left-0;
   content: '';
-  width: 8px;
+  width: 4px;
+}
+
+@screen lg {
+  .heading-with-leftborder::before {
+    width: 8px;
+  }
 }
 
 .heading-with-underscore {
@@ -69,6 +75,23 @@ h4 {
   content: '';
   bottom: 10px;
   left: 4px;
+}
+
+.testimonial-blockquote {
+  @apply relative;
+}
+
+.testimonial-blockquote::before {
+  @apply absolute h-6 top-0 left-0 w-6 ml-4;
+  content: '';
+  background-repeat: no-repeat;
+  background-image: url(".././public/testimonial/quote-icon-green.svg");
+}
+
+@screen lg {
+  .testimonial-blockquote::before {
+    @apply w-11 ml-0;
+  }
 }
 
 .WelcomeText {
