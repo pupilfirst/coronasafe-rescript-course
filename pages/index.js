@@ -70,13 +70,16 @@ export default function Home() {
         <meta name="National programme to identify the top 30 indian students in software engineering for an industry-led training to become full-stack developers and volunteer as the national engineering leadership cadre for public service." />
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-11P76BRB6N"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-11P76BRB6N');
-        </script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-11P76BRB6N');
+              `,
+          }}
+        />
       </Head>
       <main className="bg-gray-800 mx-auto">
         <section className="hero__bg-pattern bg-gray-900 pb-20">
