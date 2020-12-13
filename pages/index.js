@@ -124,14 +124,14 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-gray-800 py-10 lg:py-20 relative">
-          <div className="max-w-xl mx-auto text-white">
+          <div className="max-w-xl mx-auto text-white px-4 lg:px-0">
             <div className="terminal-container-bg border rounded-lg border-primary-500">
               <div className="flex space-x-2 px-6 py-3 border-b border-primary-500">
                 <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
                 <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
                 <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
               </div>
-              <div className="space-y-6 lg:space-y-8 text-base lg:text-lg px-6 py-6">
+              <div className="space-y-6 lg:space-y-8 text-base lg:text-lg p-4 lg:p-6">
                 <div className="flex">
                   <span className="text-primary-500 text-xl">&#10142;</span>
                   <p className="pl-3">Build <span className="text-primary-500">real-world</span>, modern web apps.</p>
@@ -212,7 +212,7 @@ export default function Home() {
                       <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
                       <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
                     </div>
-                    <div className="flex p-6">
+                    <div className="flex p-4 lg:p-6">
                       <span className="text-primary-500 text-xl">&#10142;</span>
                       <div className="pl-3">
                         <p className="text-white">Are you a student developer who wants to learn advanced, industry-oriented programming skills and join the National Engineering Leadership Cadre for Public Service?</p>
@@ -401,7 +401,7 @@ export default function Home() {
                       <div className="w-2.5 h-2.5 bg-gray-900 rounded-full"></div>
                       <div className="w-2.5 h-2.5 bg-gray-900 rounded-full"></div>
                     </div>
-                    <div className="flex p-6">
+                    <div className="flex p-4 lg:p-6">
                       <span className="text-primary-500 text-xl">&#10142;</span>
                       <div className="pl-3">
                         <div className="text-white space-y-6 text-base lg:text-lg">
