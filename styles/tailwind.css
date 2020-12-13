@@ -50,6 +50,12 @@ h4 {
   font-size: 1.25rem;
 }
 
+.hero__bg-pattern {
+  background-image: url(".././public/hero/hero-pattern-2.svg");
+  background-repeat: repeat;
+  background-size: 400px 400px;
+}
+
 .heading-with-leftborder {
   @apply relative;
 }
@@ -92,71 +98,4 @@ h4 {
   .testimonial-blockquote::before {
     @apply w-11 ml-0;
   }
-}
-
-.WelcomeText {
-  color: rgba(14, 16, 27, 0.6);
-}
-
-.HeroWithPartnerLogos {
-  background-color: #DBDEEC;
-}
-
-.PartnerLogos {
-  background-color: #C9CEE4;
-}
-
-.EverythingToKnow {
-  background-color: rgba(255, 184, 0, 0.6);
-}
-
-.Versus {
-  margin: 0 130px;
-  color: rgba(14, 16, 27, 0.4);
-}
-
-.Longform {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.Longform h2 {
-  @apply text-xl font-bold mt-12 pt-8 mb-4;
-}
-
-.Longform h3 {
-  @apply text-base text-gray-700 font-medium mt-6 mb-2;
-}
-
-.Longform p {
-  @apply mb-4;
-  @apply text-base;
-}
-
-.Testimonials {
-  color: #5C5F6D;
-}
-
-.Testimonials blockquote {
-  position: relative;
-  padding-left: 20px;
-  max-width: 560px;
-}
-
-.Testimonials blockquote:before {
-  display: block;
-  content: '"';
-  font-size: 40px;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  color: #7a7a7a;
-}
-
-.SupportedBy {
-  background-color: #F1F1F1;
-}
-
-.SupportedBy-desc {
-  color: rgba(0, 0, 0, 0.4);
 }

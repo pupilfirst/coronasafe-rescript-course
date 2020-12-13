@@ -62,7 +62,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <main className="bg-gray-800 mx-auto">
-        <section className="bg-gray-900 pb-20">
+        <section className="hero__bg-pattern bg-gray-900 pb-20">
           <header className="max-w-6xl mx-auto py-4 lg:py-8 px-4 xl:px-0">
             <div className="flex justify-between items-center">
               <img className="block w-36 md:w-44" src="logos/coronaSafe-engineering-fellowship-logo.svg" />
@@ -85,8 +85,11 @@ export default function Home() {
           </div>
         </section>
         <section className="-mt-20 mx-4 xl:mx-0">
-          <div className="bg-white rounded-lg shadow-md max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 gap-y-8 lg:gap-y-0 gap-4 md:grid-cols-3 lg:grid-cols-6">
+          <div className="bg-white rounded-lg shadow-md max-w-6xl mx-auto pb-10 px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-center text-center">
+              <p className="text-xs leading-tight text-center px-4 py-2 rounded-b-lg bg-gray-50 shadow-inner">Supported By</p>
+            </div>
+            <div className="grid grid-cols-2 gap-y-8 lg:gap-y-0 gap-4 md:grid-cols-3 lg:grid-cols-6 pt-7">
               <div className="flex justify-center">
                 <div className="w-44 flex items-center">
                   <img className="object-contain" src="logos/NSTEDB-logo.svg" alt="National Science and Technology Entrepreneurship Development Board" />
@@ -151,7 +154,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="heading-with-underscore text-xl lg:text-2xl text-primary-500 font-montserrat font-medium">When?</h3>
-                    <p className="ml-8 md:ml-16 pt-1 text-white">January 15 - March 25, 2021 <br/> 6 month internship thereafter for successful candidates.</p>
+                    <p className="ml-8 md:ml-16 pt-1 text-white">January 15 - March 25, 2021 <br /> 6 month internship thereafter for successful candidates.</p>
                   </div>
                   <div>
                     <h3 className="heading-with-underscore text-xl lg:text-2xl text-primary-500 font-montserrat font-medium">Effort?</h3>
