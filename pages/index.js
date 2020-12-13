@@ -57,9 +57,16 @@ export default function Home() {
     <div className={""}>
       <Head>
         <title>CoronaSafe Programming Course</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+        <meta property="og:title" content="CoronaSafe Engineering Fellowship" />
+        <meta property="og:description" content="National programme to identify the top 30 indian students in software engineering for an industry-led training to become full-stack developers and volunteer as the national engineering leadership cadre for public service." />
+        <meta property="og:image" content="coronasafe-engineering-fellowship.png" />
+        <meta property="og:url" content="https://fullstack.pupilfirst.org/" />
+        <meta name="twitter:card" content="coronasafe-engineering-fellowship.png" />
+        <meta property="og:site_name" content="Coronasafe Engineering Fellowship" />
       </Head>
       <main className="bg-gray-800 mx-auto">
         <section className="hero__bg-pattern bg-gray-900 pb-20">
