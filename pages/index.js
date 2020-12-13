@@ -67,6 +67,7 @@ export default function Home() {
         <meta property="og:url" content="https://fullstack.pupilfirst.org/" />
         <meta name="twitter:card" content="coronasafe-engineering-fellowship.png" />
         <meta property="og:site_name" content="Coronasafe Engineering Fellowship" />
+        <meta name="National programme to identify the top 30 indian students in software engineering for an industry-led training to become full-stack developers and volunteer as the national engineering leadership cadre for public service." />
       </Head>
       <main className="bg-gray-800 mx-auto">
         <section className="hero__bg-pattern bg-gray-900 pb-20">
