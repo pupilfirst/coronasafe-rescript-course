@@ -125,12 +125,34 @@ export default function Home() {
         </section>
         <section className="bg-gray-800 py-10 lg:py-20 relative">
           <div className="max-w-xl mx-auto text-white">
-            <div className="space-y-6 lg:space-y-10 text-base lg:text-xl px-4 xl:px-0">
-              <p>Build <span className="text-primary-500">real-world</span>, modern web apps.</p>
-              <p>Create <span className="text-primary-500">open-source</span> software.</p>
-              <p>Practical lessons drawn from 15+ years of <span className="text-primary-500">industry experience.</span></p>
-              <p>Learn <span className="text-primary-500">Typed Functional Programming</span> with ReScript/OCaml.</p>
-              <p>1:1 <span className="text-primary-500">mentorships</span> &amp; 1:many <span className="text-primary-500">friendships.</span></p>
+            <div className="terminal-container-bg border rounded-lg border-primary-500">
+              <div className="flex space-x-2 px-6 py-3 border-b border-primary-500">
+                <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
+                <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
+                <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
+              </div>
+              <div className="space-y-6 lg:space-y-8 text-base lg:text-lg px-6 py-6">
+                <div className="flex">
+                  <span className="text-primary-500 text-xl">&#10142;</span>
+                  <p className="pl-3">Build <span className="text-primary-500">real-world</span>, modern web apps.</p>
+                </div>
+                <div className="flex">
+                  <span className="text-primary-500 text-xl">&#10142;</span>
+                  <p className="pl-3">Create <span className="text-primary-500">open-source</span> software.</p>
+                </div>
+                <div className="flex">
+                  <span className="text-primary-500 text-xl">&#10142;</span>
+                  <p className="pl-3">Practical lessons drawn from 15+ years of <span className="text-primary-500">industry experience.</span></p>
+                </div>
+                <div className="flex">
+                  <span className="text-primary-500 text-xl">&#10142;</span>
+                  <p className="pl-3">Learn <span className="text-primary-500">Typed Functional Programming</span> with ReScript/OCaml.</p>
+                </div>
+                <div className="flex">
+                  <span className="text-primary-500 text-xl">&#10142;</span>
+                  <p className="pl-3">1:1 <span className="text-primary-500">mentorships</span> &amp; 1:many <span className="text-primary-500">friendships.</span></p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -184,17 +206,22 @@ export default function Home() {
               </div>
               <div className="lg:col-span-2">
                 <div className="sticky top-0 pt-12">
-                  <div className="border rounded-lg border-primary-500 bg-black">
+                  <div className="terminal-container-bg border rounded-lg border-primary-500">
                     <div className="flex space-x-2 px-6 py-3 border-b border-primary-500">
                       <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
                       <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
                       <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
                     </div>
-                    <p className="text-white p-6">Are you a student developer who wants to learn advanced, industry-oriented programming skills and join the National Engineering Leadership Cadre for Public Service?</p>
-                    <div className="px-6 pb-6">
-                      <a
-                        className="block px-10 py-4 text-center bg-gradient-to-b from-primary-500 to-primary-700 text-gray-900 border border-primary-500 font-bold font-montserrat rounded shadow-lg hover:shadow-xl hover:from-gray-800 hover:to-gray-900 hover:text-primary-500 transition duration-250 ease-in-out"
-                        href="https://apply.pupilfirst.org">Apply for Fellowship</a>
+                    <div className="flex p-6">
+                      <span className="text-primary-500 text-xl">&#10142;</span>
+                      <div className="pl-3">
+                        <p className="text-white">Are you a student developer who wants to learn advanced, industry-oriented programming skills and join the National Engineering Leadership Cadre for Public Service?</p>
+                        <div className="pt-4">
+                          <a
+                            className="block px-10 py-4 text-center bg-gradient-to-b from-primary-500 to-primary-700 text-gray-900 border border-primary-500 font-bold font-montserrat rounded shadow-lg hover:shadow-xl hover:from-gray-800 hover:to-gray-900 hover:text-primary-500 transition duration-250 ease-in-out"
+                            href="https://apply.pupilfirst.org">Apply for Fellowship</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -368,15 +395,20 @@ export default function Home() {
                 </div>
                 <p className="text-xs italic pt-6 text-gray-200 pl-4 xl:pl-0">* Stats as of December 14, 2020</p>
                 <div className="py-10 lg:pb-20 pl-4 lg:pl-0">
-                  <div className="border rounded-lg border-primary-500 bg-black">
+                  <div className="terminal-container-bg border rounded-lg border-primary-500">
                     <div className="flex space-x-1.5 px-6 py-3 border-b border-primary-500">
                       <div className="w-2.5 h-2.5 bg-gray-900 rounded-full"></div>
                       <div className="w-2.5 h-2.5 bg-gray-900 rounded-full"></div>
                       <div className="w-2.5 h-2.5 bg-gray-900 rounded-full"></div>
                     </div>
-                    <div className="text-white p-6 space-y-6 text-base lg:text-lg">
-                      <p>We are now looking to select 30 of the best student developers in India to become full stack developers under industry guidance.</p>
-                      <p>Successful students who complete the programme shall get a semester long internship with CoronaSafe to contribute code to further develop this national asset.</p>
+                    <div className="flex p-6">
+                      <span className="text-primary-500 text-xl">&#10142;</span>
+                      <div className="pl-3">
+                        <div className="text-white space-y-6 text-base lg:text-lg">
+                          <p>We are now looking to select 30 of the best student developers in India to become full stack developers under industry guidance.</p>
+                          <p>Successful students who complete the programme shall get a semester long internship with CoronaSafe to contribute code to further develop this national asset.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -427,7 +459,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="max-w-3xl mx-auto pl-4 lg:pl-0">
-                <div className="border rounded-lg bg-gray-900 shadow-xl border-primary-500 divide-y divide-primary-500 mt-4">
+                <div className="terminal-container-bg border rounded-lg shadow-xl border-primary-500 divide-y divide-primary-500 mt-4">
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">December 14, 2020</p>
                     <p className="col-span-9 ml-8 text-white">- Application Opens</p>
@@ -472,6 +504,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </div>
+    </div >
   );
 }
