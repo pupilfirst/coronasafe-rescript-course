@@ -72,7 +72,7 @@ export default function Home() {
           <div className="max-w-6xl flex flex-col md:flex-row justify-between mx-auto text-white pt-2 pb-12 px-4 xl:px-0">
             <div className="w-full md:w-8/12">
               <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold font-montserrat leading-tight lg:pt-16">Welcome to the CoronaSafe <br />Engineering Fellowship!</h1>
-              <p className="font-spacemono text-sm md:text-base lg:text-lg pt-2 lg:pt-4 lg:pr-12">CoronaSafe Engineering Fellowship is a national programme to identify the top 30 students in software engineering for an industry-led training to become full-stack developers.</p>
+              <p className="font-spacemono text-sm md:text-base lg:text-lg pt-2 lg:pt-4 lg:pr-12">CoronaSafe Engineering Fellowship is a national programme to identify the top 30 indian students in software engineering for an industry-led training to become full-stack developers and volunteer as the national engineering leadership cadre for public service.</p>
               <div className="mt-4 md:mt-8"><ApplyToCourse /></div>
             </div>
             <div className="hidden md:block md:w-4/12">
@@ -151,7 +151,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="heading-with-underscore text-xl lg:text-2xl text-primary-500 font-montserrat font-medium">When?</h3>
-                    <p className="ml-8 md:ml-16 pt-1 text-white">January 15 - March 25, 2021</p>
+                    <p className="ml-8 md:ml-16 pt-1 text-white">January 15 - March 25, 2021 <br/> 6 month internship thereafter for successful candidates.</p>
                   </div>
                   <div>
                     <h3 className="heading-with-underscore text-xl lg:text-2xl text-primary-500 font-montserrat font-medium">Effort?</h3>
@@ -284,7 +284,7 @@ export default function Home() {
               </div>
               <div className="max-w-3xl mx-auto pl-4 lg:pl-0">
                 <div className="space-y-6 text-white">
-                  <p className="mt-4">This program is created by a team of over a dozen people from across multiple companies, with funding from the Michael &amp; Dell Foundation, the ACT foundation, and support from FreshWorks.</p>
+                  <p className="mt-4">This program is created by a team of over a dozen people from across multiple companies, with funding from the Michael &amp; Dell Foundation, Wadhwani Foundation, the ACT foundation, and support from FreshWorks.</p>
                   <p>ACT is a 100 crore fund setup by India’s leading tech entrepreneurs and venture capitalists for supporting efforts combating COVID-19. CoronaSafe is a recipient of ACT grants.</p>
                   <p>This funding enables us to offer the course to you for free.</p>
                 </div>
@@ -302,6 +302,26 @@ export default function Home() {
                 <div className="space-y-6 text-white">
                   <p className="mt-4">CoronaSafe Network codebase is a national asset created by India’s leading software industry engineers along with the National Health Mission, Government of India and Department of Health, Government of Kerala.</p>
                   <p>Over 300+ industry software engineers have voluntarily contributed to build CoronaSafe Network. The Corona Care software is currently being used in over 200 hospitals to record patient intake and availability of facilities. This results in a central dashboard used by the Ernakulam district collector’s office for monitoring and allocating resources.</p>
+                </div>
+              </div>
+              <div className="max-w-3xl mx-auto pl-4 lg:pl-0 mt-4">
+                <div className="text-primary-500 flex space-x-6">
+                  <a className="flex items-center space-x-2 cursor-pointer" href="https://github.com/coronasafe/">
+                    <div className="h-4 w-4">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                    </div>
+                    <span>
+                      GitHub
+                    </span>
+                  </a>
+                  <a className="flex items-center space-x-2 cursor-pointer" href="https://coronasafe.network/tools">
+                    <div className="h-4 w-4">
+                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="external-link-alt" class="svg-inline--fa fa-external-link-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>
+                    </div>
+                    <span>
+                      Tools
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -326,13 +346,13 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-xl text-primary-500">
-                      62K+
+                      75K+
                 </h4>
                     <p className="pt-1 text-sm text-white">Patients Managed</p>
                   </div>
                   <div>
                     <h4 className="text-xl text-primary-500">
-                      28K+
+                      35K+
                 </h4>
                     <p className="pt-1 text-sm text-white">Shifting Managed</p>
                   </div>
@@ -343,7 +363,7 @@ export default function Home() {
                     <p className="pt-1 text-sm text-white">Telemedicine Calls</p>
                   </div>
                 </div>
-                <p className="text-xs italic pt-6 text-gray-200 pl-4 xl:pl-0">* Stats as of November 20, 2020</p>
+                <p className="text-xs italic pt-6 text-gray-200 pl-4 xl:pl-0">* Stats as of December 14, 2020</p>
                 <div className="py-10 lg:pb-20 pl-4 lg:pl-0">
                   <div className="border rounded-lg border-primary-500 bg-black">
                     <div className="flex space-x-1.5 px-6 py-3 border-b border-primary-500">
