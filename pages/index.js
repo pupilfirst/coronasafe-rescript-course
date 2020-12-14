@@ -500,6 +500,10 @@ export default function Home() {
                     <p className="col-span-3 text-primary-500 lg:text-right">March 25, 2021</p>
                     <p className="col-span-9 ml-8 text-white">- Program Ends</p>
                   </div>
+                  <div className="md:grid md:grid-cols-12 p-4">
+                    <p className="col-span-3 text-primary-500 lg:text-right">April 01, 2021</p>
+                    <p className="col-span-9 ml-8 text-white">- Internship with Coronasafe Begins (6 months)</p>
+                  </div>
                 </div>
                 <div className="pt-10 lg:pt-16">
                   <h4 className="text-primary-500 text-xl lg:text-3xl font-montserrat font-bold">Questions?</h4>
