@@ -481,11 +481,11 @@ export default function Home() {
               <div className="max-w-3xl mx-auto pl-4 lg:pl-0">
                 <div className="terminal-container-bg border rounded-lg shadow-xl border-primary-500 divide-y divide-primary-500 mt-4">
                   <div className="md:grid md:grid-cols-12 p-4">
-                    <p className="col-span-3 text-primary-500 lg:text-right">December 14, 2020</p>
+                    <p className="col-span-3 text-primary-500 lg:text-right text-gray-200 line-through">December 14, 2020</p>
                     <p className="col-span-9 ml-8 text-white">- Application Opens</p>
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
-                    <p className="col-span-3 text-primary-500 lg:text-right">January 05, 2021</p>
+                    <p className="col-span-3 text-primary-500 lg:text-right text-gray-200 line-through">January 05, 2021</p>
                     <p className="col-span-9 ml-8 text-white">- Application Ends</p>
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
