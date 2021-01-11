@@ -497,7 +497,7 @@ export default function Home() {
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">January 12, 2021</p>
-                    <p className="col-span-9 ml-8 text-white">- Announcement of 30 selected students </p>
+                    <p className="col-span-9 ml-8 text-white">- Announcement of selected students </p>
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">January 15, 2021</p>
@@ -509,7 +509,7 @@ export default function Home() {
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">April 01, 2021</p>
-                    <p className="col-span-9 ml-8 text-white">- Internship with Coronasafe Begins (6 months)</p>
+                    <p className="col-span-9 ml-8 text-white">- Internship with CoronaSafe Begins (6 months)</p>
                   </div>
                 </div>
                 <div className="pt-10 lg:pt-16">
