@@ -93,7 +93,14 @@ export default function Home() {
             <div className="w-full md:w-8/12">
               <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold font-montserrat leading-tight lg:pt-16">Welcome to the CoronaSafe <br />Engineering Fellowship!</h1>
               <p className="font-spacemono text-sm md:text-base lg:text-lg pt-2 lg:pt-4 lg:pr-12">CoronaSafe Engineering Fellowship is a national programme to identify the top 30 indian students in software engineering for an industry-led training to become full-stack developers and volunteer as the national engineering leadership cadre for public service.</p>
-              <div className="mt-4 md:mt-8"><ApplyToCourse /></div>
+              <div className=" border border-primary-500 rounded-lg bg-black p-6 mt-6 ">
+                <p>
+                  AICTE will be announcing the results on <span className="text-primary-500 font-semibold">January 12, 2021.</span>
+                </p>
+                <p>
+                  Keep a lookout in AICTE social media pages on <a href="https://www.facebook.com/OfficialAICTE" target="_blank" className="text-blue-600 font-semibold hover:text-blue-400 hover:underline">Facebook</a> and <a href="https://twitter.com/AICTE_INDIA" target="_blank" className="text-blue-400 font-semibold hover:text-blue-300 hover:underline">Twitter</a> for more information.
+                </p>
+              </div>
             </div>
             <div className="hidden md:block md:w-4/12">
               <picture>
@@ -527,7 +534,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
+      </main >
     </div >
   );
 }
