@@ -489,7 +489,7 @@ export default function Home() {
                     <p className="col-span-9 ml-8 text-white text-gray-200 line-through">- Application Ends</p>
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
-                    <p className="col-span-3 text-primary-500 lg:text-right">January 10, 2021</p>
+                    <p className="col-span-3 text-primary-500 lg:text-right">January 12, 2021</p>
                     <p className="col-span-9 ml-8 text-white">- Announcement of 30 selected students </p>
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
