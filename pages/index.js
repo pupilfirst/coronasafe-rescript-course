@@ -98,6 +98,7 @@ export default function Home() {
                   AICTE has announced the results! You can view the list of accepted students at this link: <a className="text-secondary-500 hover:text-primary-500 font-semibold" href="https://r.sv.co/csn-result-2021">Selected Students</a>
                 </p>
               </div>
+              <div className="text-xs mt-2 italic">Here's an <a className="text-secondary-500 hover:text-primary-500 font-semibold" href="https://r.sv.co/csn-selection-process">an explanation of the process that was used to select students</a> for this program.</div>
             </div>
             <div className="hidden md:block md:w-4/12">
               <picture>
@@ -539,6 +540,7 @@ export default function Home() {
                       View list of students</a>
                   </div>
                 </div>
+                <div className="text-white text-xs mt-2 italic">Here's an <a className="text-secondary-500 hover:text-primary-500 font-semibold" href="https://r.sv.co/csn-selection-process">an explanation of the process that was used to select students</a> for this program.</div>
               </div>
             </div>
           </div>
