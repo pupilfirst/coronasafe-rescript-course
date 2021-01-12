@@ -95,17 +95,14 @@ export default function Home() {
               <p className="font-spacemono text-sm md:text-base lg:text-lg pt-2 lg:pt-4 lg:pr-12">CoronaSafe Engineering Fellowship is a national programme to identify the top 30 indian students in software engineering for an industry-led training to become full-stack developers and volunteer as the national engineering leadership cadre for public service.</p>
               <div className=" border border-primary-500 rounded-lg bg-black p-6 mt-6 ">
                 <p>
-                  AICTE will be announcing the results on <span className="text-primary-500 font-semibold">January 12, 2021.</span>
-                </p>
-                <p>
-                  Keep a lookout in AICTE social media pages on <a href="https://www.facebook.com/OfficialAICTE" target="_blank" className="text-blue-600 font-semibold hover:text-blue-400 hover:underline">Facebook</a> and <a href="https://twitter.com/AICTE_INDIA" target="_blank" className="text-blue-400 font-semibold hover:text-blue-300 hover:underline">Twitter</a> for more information.
+                  AICTE has announced the results! You can view the list of accepted students at this link: <a className="text-secondary-500 hover:text-primary-500 font-semibold" href="https://r.sv.co/csn-result-2021">Selected Students</a>
                 </p>
               </div>
             </div>
             <div className="hidden md:block md:w-4/12">
               <picture>
-                <source srcset="hero/cef-hero-image.webp" type="image/webp" />
-                <source srcset="hero/cef-hero-image.png" type="image/png" />
+                <source srcSet="hero/cef-hero-image.webp" type="image/webp" />
+                <source srcSet="hero/cef-hero-image.png" type="image/png" />
                 <img src="hero/cef-hero-image.png" alt="CoronaSafe Engineering Fellowship Icon" />
               </picture>
             </div>
@@ -231,7 +228,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="lg:col-span-2">
+              {/* <div className="lg:col-span-2">
                 <div className="sticky top-0 pt-12">
                   <div className="terminal-container-bg border rounded-lg border-primary-500">
                     <div className="flex space-x-2 px-6 py-3 border-b border-primary-500">
@@ -252,7 +249,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -365,7 +362,7 @@ export default function Home() {
                 <div className="text-primary-500 flex space-x-6">
                   <a className="flex items-center space-x-2 cursor-pointer" href="https://github.com/coronasafe/">
                     <div className="h-4 w-4">
-                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" className="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
                     </div>
                     <span>
                       GitHub
@@ -373,7 +370,7 @@ export default function Home() {
                   </a>
                   <a className="flex items-center space-x-2 cursor-pointer" href="https://coronasafe.network/tools">
                     <div className="h-4 w-4">
-                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="external-link-alt" class="svg-inline--fa fa-external-link-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>
+                      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="external-link-alt" className="svg-inline--fa fa-external-link-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>
                     </div>
                     <span>
                       Tools
@@ -489,15 +486,15 @@ export default function Home() {
                 <div className="terminal-container-bg border rounded-lg shadow-xl border-primary-500 divide-y divide-primary-500 mt-4">
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">December 14, 2020</p>
-                    <p className="col-span-9 ml-8 text-white text-gray-200 line-through">- Application Opens</p>
+                    <p className="col-span-9 ml-8 text-gray-200 line-through">- Application Opens</p>
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">January 05, 2021</p>
-                    <p className="col-span-9 ml-8 text-white text-gray-200 line-through">- Application Ends</p>
+                    <p className="col-span-9 ml-8 text-gray-200 line-through">- Application Ends</p>
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">January 12, 2021</p>
-                    <p className="col-span-9 ml-8 text-white">- Announcement of selected students </p>
+                    <p className="col-span-9 ml-8 text-gray-200 line-through">- Announcement of selected students </p>
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">January 15, 2021</p>
@@ -519,7 +516,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="max-w-3xl mx-auto py-10 lg:pb-24 pl-4 xl:pl-0">
+              {/* <div className="max-w-3xl mx-auto py-10 lg:pb-24 pl-4 xl:pl-0">
                 <div className="rounded-lg bg-gradient-to-b from-primary-400 to-primary-700 p-6 lg:p-12">
                   <h4 className="text-xl lg:text-3xl font-montserrat font-bold text-center">Apply now for<br /> CoronaSafe Engineering Fellowship!</h4>
                   <div className="mt-4 flex justify-center">
@@ -528,6 +525,18 @@ export default function Home() {
                       href="https://apply.pupilfirst.org"
                     >
                       Apply for Fellowship</a>
+                  </div>
+                </div>
+              </div> */}
+              <div className="max-w-3xl mx-auto py-10 lg:pb-24 pl-4 xl:pl-0">
+                <div className="rounded-lg bg-gradient-to-b from-primary-400 to-primary-700 p-6 lg:p-12">
+                  <h4 className="text-xl lg:text-3xl font-montserrat font-bold text-center">AICTE has announced<br />the list of selected students!</h4>
+                  <div className="mt-4 flex justify-center">
+                    <a
+                      className="block text-center px-10 py-4 bg-gray-900 text-primary-500 border border-primary-500 font-bold font-montserrat rounded shadow-lg hover:shadow-xl hover:bg-primary-900 hover:text-gray-900 transition duration-250 ease-in-out"
+                      href="https://r.sv.co/csn-result-2021"
+                    >
+                      View list of students</a>
                   </div>
                 </div>
               </div>
