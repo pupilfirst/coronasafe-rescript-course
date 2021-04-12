@@ -499,11 +499,11 @@ export default function Home() {
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">January 15, 2021</p>
-                    <p className="col-span-9 ml-8 text-white">- Program Begins</p>
+                    <p className="col-span-9 ml-8 text-gray-200 line-through">- Program Begins</p>
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">March 25, 2021</p>
-                    <p className="col-span-9 ml-8 text-white">- Program Ends</p>
+                    <p className="col-span-9 ml-8 text-gray-200 line-through">- Program Ends</p>
                   </div>
                   <div className="md:grid md:grid-cols-12 p-4">
                     <p className="col-span-3 text-primary-500 lg:text-right">April 01, 2021</p>
